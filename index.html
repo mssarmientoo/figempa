@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/087dfb62b8.js" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Title -->
+    <title>Análisis estadístico de plantas solares a nivel mundial</title>
+</head>
+<body>
+    <div class="nav-wrap" role="banner">
+        <div class="nav">
+            <div class="brand">
+                <a href="#inicio" aria-label="Inicio del proyecto">
+                    <img src="assets/images/logo.png" alt="Logo FIGMPA / Proyecto" />
+                </a>
+                
+<div class="title-block" style="display: none;">
+                    <span class="titulo" data-i18n="project_title_nav"></span>
+                    <small data-i18n="project_faculty"></small>
+                </div>
+            </div>
+
+            <nav role="navigation" aria-label="Menú principal">
+                <ul>
+                    <li><a href="#inicio" data-i18n="nav_inicio">Home</a></li>
+                    <li><a href="#introduccion" data-i18n="nav_introduccion">Introducción</a></li>
+
+                    <li>
+                        <a href="#desc" data-i18n="nav_desc">Estadística descriptiva ▾</a>
+                        <div class="dropdown" role="menu" aria-label="Submenu estadística descriptiva">
+                            <div class="subtle">Descriptiva</div>
+                            <a href="#variables" data-i18n="nav_variables">Variables</a>
+                            <a href="#desc" data-i18n="nav_resumen">Resumen y Gráficos</a>
+                        </div>
+                    </li>
+
+                    <li><a href="#inferencial" data-i18n="nav_inferencial">Estadística inferencial</a></li>
+                    <li><a href="#regresion" data-i18n="nav_regresion">Modelos de regresión</a></li>
+
+                    <li>
+                        <a href="#mas" data-i18n="nav_mas">Más ▾</a>
+                        <div class="dropdown" role="menu" aria-label="Más">
+                            <div class="subtle">Temas avanzados</div>
+                            <a href="#ml" data-i18n="nav_ml">Machine Learning</a>
+                            <a href="#herramientas" data-i18n="nav_tools">Herramientas utilizadas</a>
+                            <a href="#conclusion" data-i18n="nav_conclusion">Conclusión</a>
+                            <a href="#informacion" data-i18n="nav_info">Información</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="lang-toggle" role="group" aria-label="Cambiar idioma">
+                            <button id="btnES" class="active">ES</button>
+                            <button id="btnEN">EN</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div style="display:flex;gap:8px;align-items:center">
+                <button class="mobile-toggle" id="mobileBtn" aria-label="Abrir menú">☰</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileMenu" style="display:none;position:fixed;right:16px;top:82px;z-index:70;background:linear-gradient(180deg, rgba(2,6,23,0.95), rgba(2,6,23,0.98));padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 20px 50px rgba(0,0,0,0.6)">
+        <nav>
+            <a href="#inicio" data-i18n="nav_inicio" style="display:block;padding:8px 10px" class="mobile-link">Inicio</a>
+            <a href="#introduccion" data-i18n="nav_introduccion" style="display:block;padding:8px 10px" class="mobile-link">Introducción</a>
+            <a href="#variables" data-i18n="nav_variables" style="display:block;padding:8px 10px" class="mobile-link">Variables</a>
+            <a href="#desc" data-i18n="nav_resumen" style="display:block;padding:8px 10px" class="mobile-link">Resumen Descriptivo</a>
+            <a href="#inferencial" data-i18n="nav_inferencial" style="display:block;padding:8px 10px" class="mobile-link">Estadística inferencial</a>
+            <a href="#regresion" data-i18n="nav_regresion" style="display:block;padding:8px 10px" class="mobile-link">Modelos de regresión</a>
+            <a href="#ml" data-i18n="nav_ml" style="display:block;padding:8px 10px" class="mobile-link">Machine Learning</a>
+            <a href="#herramientas" data-i18n="nav_tools" style="display:block;padding:8px 10px" class="mobile-link">Herramientas</a>
+            <a href="#conclusion" data-i18n="nav_conclusion" style="display:block;padding:8px 10px" class="mobile-link">Conclusión</a>
+            <a href="#informacion" data-i18n="nav_info" style="display:block;padding:8px 10px" class="mobile-link">Información</a>
+            <div style="height:6px"></div>
+            <div style="display:flex;gap:8px;justify-content:center">
+                <button id="mES" class="badge">ES</button>
+                <button id="mEN" class="badge">EN</button>
+            </div>
+        </nav>
+    </div>
+
+    <header id="inicio" class="hero-video-wrap section-anchor" role="region" aria-label="Portada con video">
+        <video autoplay muted loop id="heroVideo">
+            <source src="assets/videos/uce.mp4" type="video/mp4">
+            Tu navegador no soporta el tag de video.
+        </video>
+        
+        <div class="video-overlay"></div>
+
+        <div class="hero-inner-centered">
+            <h1 data-i18n="hero_title_centered" class="hero-h1">ANÁLISIS ESTADÍSTICO DE PLANTAS SOLARES A NIVEL MUNDIAL</h1>
+            <p class="lead" data-i18n="hero_lead_centered">Análisis estadístico de datos, aplicando métodos descriptivos e inferenciales con el uso del lenguaje R en RStudio</p>
+        </div>
+    </header>
+    
+    <hr style="border-color: rgba(255,255,255,0.05); max-width: var(--maxwidth); margin: 0 auto;"/>
+
+    
+<div class="important-box">
+        <h3>¡IMPORTANTE!</h3>
+        <p>Este proyecto es de carácter académico y está en permanente desarrollo. La información y los análisis incluidos se presentan con propósitos educativos.</p>
+    </div>
+
+    
+<div class="content-placeholder">
+        <h2 class="title-2">OBJETIVOS</h2>
+        <h3 class="title-3">Objetivo General:</h3> 
+        <p class="general-objective">Evaluar el panorama global de las plantas solares mediante análisis estadístico para identificar patrones de distribución y su correlación con factores ambientales, parámetros eléctricos y tendencias temporales.</p>
+
+        <h3 class="title-3">Objetivos especificos:</h3>
+        <ol class="objectives-list">
+            <li class="objectives-items">Aplicar herramientas estadísticas y de machine learning para analizar y caracterizar la base de datos de plantas solares a nivel mundial.</li>
+            <li class="objectives-items">Mapear la distribución geográfica de las plantas solares utilizando ArcMap para visualizar su situación y ubicación actual.</li>
+            <li class="objectives-items">Interpretar los resultados estadísticos para dimensionar la importancia de las plantas solares en la transición energética global.</li>
+        </ol>
+    </div>
+
+<div class="content-placeholder">
+    <h2 class="title-2">PLANTEAMIENTO DEL PROBLEMA</h2>
+    <p class="problem-desc">El análisis estadístico de las plantas solares a nivel mundial es clave para medir su eficiencia real. Este proyecto utilizará una base de datos propia para transformar la información bruta de las plantas (como su capacidad y ubicación) en insumos relevantes. El objetivo es aplicar la estadística para entender qué factores determinan de verdad el rendimiento energético a escala global.</p>
+</div>
+
+<div class="content-placeholder">
+    <h2 class="title-2">MISIÓN - VISIÓN</h2>
+    <h3 class="title-3">Misión</h3>
+    <p class="mision-text">Aplicar métodos estadísticos para identificar y cuantificar los factores que determinan la eficiencia real de las plantas solares a nivel mundial.</p>
+    <h3 class="title-3">Visión</h3>
+    <p class="text">Convertirnos en un análisis estadístico clave que revele las verdaderas tendencias y el potencial global de la energía solar.</p>
+
+</div>
+
+    
+<section id="motivaciones" class="card motivation-card">
+        <div class="card-box">
+            <img src="assets/images/facultad.jpg" alt="Edificio de la Facultad de Ingeniería" style="border-radius:10px; box-shadow:0 10px 20px rgba(0,0,0,0.3)"/>
+            <div>
+                <h2 style="font-size:2rem;margin-bottom:15px;color:var(--gold)">MOTIVACIONES DEL PROYECTO</h2>
+                <p data-i18n="motivaciones_text">Como estudiantes de la Universidad Central del Ecuador, desarrollamos este proyecto con el propósito de aplicar la estadística como una herramienta fundamental en el análisis de datos. Nuestro objetivo es no solo interpretar la información, sino también destacar la relevancia de la estadística en la toma de decisiones informadas dentro del ámbito profesional relacionado con nuestra carrera.</p>
+                <div style="border:1px solid var(--accent);padding:10px 15px;text-align:center;margin-top:20px;display:inline-block;border-radius:8px">
+                    <a href="https://www.uce.edu.ec/web/figempa" target="_blank" style="font-weight:700">UNIVERSIDAD CENTRAL DEL ECUADOR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<main>
+        
+<section id="introduccion" class="card section-anchor">
+            <h2 data-i18n="intro_title">Introducción</h2>
+            <p data-i18n="intro_text">El presente proyecto busca compilar, describir y modelar datos de plantas solares alrededor del mundo para estudiar su rendimiento, factores influyentes y proyecciones. Este primer avance contiene la estructura de la página, menú y secciones principales donde se cargarán los resultados.</p>
+        </section>
+
+        
+<section id="obtencion-datos" class="card section-anchor">
+            <h2 data-i18n="data_source_title">Metodología y Obtención de Datos</h2>
+            
+            <div class="metod-data">
+                <div style="flex-grow:1;">
+                    <h3 style="color:var(--accent); margin-bottom: 8px;">Proceso de Recolección y Limpieza</h3>
+                    <ol style="color:var(--muted); margin-left:20px; font-size: 0.95rem; line-height: 1.7;">
+                        <li><strong>Recolección:</strong> Compilación inicial de datos brutos de la NREL (National Renewable Energy Laboratory), bases de datos de operadores y repositorios abiertos.</li>
+                        <li><strong>Depuración de Datos:</strong> Tratamiento de valores faltantes (NaN) y detección/corrección de datos atípicos o erróneos en la capacidad (MW) y coordenadas.</li>
+                        <li><strong>Estandarización:</strong> Normalización de nombres de países y unidades (e.g., conversión de 'kW' a 'MW' y 'GWh/año' a 'Factor de Planta').</li>
+                        <li><strong>Dataset Final:</strong> El conjunto de datos incluye 18,500 registros de plantas solares activas a nivel mundial, cubriendo el período [AÑO INICIO] a [AÑO FIN].</li>
+                    </ol>
+                    <p class="muted" style="margin-top:15px; font-style:italic;">*Este enfoque garantiza un dataset robusto y consistente para los análisis estadísticos posteriores.</p>
+                </div>
+                <div style="flex-shrink:0; width:150px; text-align:center; padding:10px;">
+                    <i class="fas fa-database" style="font-size: 4rem; color: var(--gold); margin-bottom: 10px;"></i>
+                    <p style="color:var(--gold); font-weight:600; font-size:0.9rem;">Dataset Global</p>
+                </div>
+            </div>
+        </section>
+
+        
+<section id="desc" class="card section-anchor">
+            <h2 data-i18n="desc_title">Estadística descriptiva</h2>
+            <p data-i18n="desc_text">Aquí se mostrará el análisis exploratorio: conteos, distribuciones, histogramas, y tablas resumen por región y tipo de planta.</p>
+
+            <div id="variables" class="two-col section-anchor" style="margin-top:12px">
+                <div>
+                    <h3 data-i18n="vars_title">Variables</h3>
+                    <p class="muted" data-i18n="vars_text">Ejemplos de variables que contemplamos: potencia instalada (MW), capacidad efectiva, factor de planta, irradiancia promedio, coordenadas (lat/lon), año de instalación y tipo de panel.</p>
+
+                    <div class="feature-list">
+                        
+                        <div class="feature" style="display:flex; align-items:center; gap:12px;">
+                            <i class="fas fa-bolt" style="color:var(--accent); font-size:1.4rem;"></i>
+                            <div>
+                                <strong>Potencia instalada (MW)</strong>
+                                <div class="muted">
+                                    Tipo: **Numérica continua**. Distribución: **Asimétrica positiva** (muchas plantas pequeñas, pocas muy grandes).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature" style="display:flex; align-items:center; gap:12px;">
+                            <i class="fas fa-percent" style="color:var(--accent); font-size:1.4rem;"></i>
+                            <div>
+                                <strong>Factor de planta (%)</strong>
+                                <div class="muted">
+                                    Tipo: **Numérica continua** (0-100%). Distribución: **Ligeramente sesgada** o bimodal (según tecnología).
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature" style="display:flex; align-items:center; gap:12px;">
+                            <i class="fas fa-sun" style="color:var(--accent); font-size:1.4rem;"></i>
+                            <div>
+                                <strong>Irradiancia (kWh/m²/día)</strong>
+                                <div class="muted">
+                                    Tipo: **Numérica continua**. Distribución: **Normal o Ligeramente Sesgada** (dependiendo de la geografía).
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature" style="display:flex; align-items:center; gap:12px;">
+                            <i class="fas fa-solar-panel" style="color:var(--accent); font-size:1.4rem;"></i>
+                            <div>
+                                <strong>Tipo de Panel</strong>
+                                <div class="muted">
+                                    Tipo: **Categórica nominal**. Distribución: **Frecuencia** (ej: Monocristalino, Policristalino, Thin Film).
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <aside style="height:100%">
+                    <div class="feature">
+                        <strong data-i18n="data_preview">Vista previa de datos</strong>
+                        <p class="muted" data-i18n="data_preview_text">En la próxima versión integraré la carga de CSV y la tabla interactiva con filtros.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        
+<section id="inferencial" class="card section-anchor">
+            <h2 data-i18n="inf_title">Estadística inferencial</h2>
+            <p data-i18n="inf_text">Se aplicarán pruebas de hipótesis, comparación de medias y análisis de correlación para identificar relaciones significativas entre variables (ej.: irradiancia vs factor de planta).</p>
+        </section>
+
+        
+<section id="regresion" class="card section-anchor">
+            <h2 data-i18n="reg_title">Modelos de regresión</h2>
+            <p data-i18n="reg_text">Modelos lineales y no lineales para estimar producción, incluyendo regresión múltiple y pruebas de validación (cross-validation).</p>
+        </section>
+
+        
+<section id="ml" class="card section-anchor">
+            <h2 data-i18n="ml_title">Machine Learning</h2>
+            <p data-i18n="ml_text">En etapas avanzadas se integrarán técnicas de ML para predicción de rendimiento: árboles, random forests, boosting y redes neuronales. Se documentarán pipelines y métricas (RMSE, MAE).</p>
+        </section>
+
+        
+<section id="herramientas" class="card section-anchor">
+            <h2 data-i18n="tools_title">Herramientas utilizadas</h2>
+            <ul class="muted">
+                <li>Python (pandas, scikit-learn)</li>
+                <li>R (opcional para análisis estadístico)</li>
+                <li>JavaScript (Chart.js) — vistas interactivas</li>
+                <li>Git / GitHub — control de versiones y publicación (GitHub Pages)</li>
+            </ul>
+        </section>
+
+        
+<section id="conclusion" class="card section-anchor">
+            <h2 data-i18n="concl_title">Conclusión</h2>
+            <p data-i18n="concl_text">Este avance establece la base para integrar datos reales y visualizaciones dinámicas. Próximos pasos: importar datasets consolidados, crear gráficas comparativas y entrenar modelos predictivos.</p>
+        </section>
+
+        
+<section id="informacion" class="card section-anchor">
+            <h2 data-i18n="info_title">Información</h2>
+            <p data-i18n="info_text">Equipo: Sarmiento Martín, Miles Juleidy, Neira Fernando, Ramírez Carlos y Masías Elías. Profesor guía: [Nombre]. Fuente de datos: open datasets, operadores y repositorios internacionales. Fecha: 2025.</p>
+        </section>
+
+    </main>
+
+    <div class="footer-wrap">
+        <div class="footer-inner">
+            <div class="team-block">
+                <ul class="team-list">
+                    <li>MASÍAS ELÍAS</li>
+                    <li>MILES JULEIDY</li>
+                    <li>NEIRA FERNANDO</li>
+                    <li>RAMÍREZ CARLOS</li>
+                    <li>SARMIENTO MARTÍN</li>
+                </ul>
+            </div>
+
+            <div class="copyright-block">
+                <p style="margin-bottom:10px">COPYRIGHT © 2025, GRUPO 1 - ESTADÍSTICA.</p>
+                <p style="font-weight:700">UNIVERSIDAD CENTRAL DEL ECUADOR - FIGEMPA</p>
+                <p style="font-size:0.8rem">TODOS LOS DERECHOS RESERVADOS.</p>
+                
+                <div class="social-icons" style="margin-top:15px">
+                    <a href="https://www.instagram.com/figempa_uce/" target="_blank" aria-label="Instagram FIGEMPA UCE"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Figempa/" target="_blank" aria-label="Facebook FIGEMPA"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.uce.edu.ec/web/figempa" target="_blank" aria-label="Sitio web FIGEMPA"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="chatbotBtn" style="position:fixed; bottom:25px; right:25px; background:var(--gold); color:#000; border:none; width:55px; height:55px; border-radius:50%; box-shadow:0 8px 15px rgba(0,0,0,0.4); cursor:pointer; font-size:1.8rem; z-index:90;">🤖</button>
+
+    <div id="chatbotModal" style="display:none; position:fixed; bottom:90px; right:25px; width:340px; height:450px; background:var(--surface); border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.5); z-index:100; border:1px solid rgba(255,255,255,0.05);">
+        <div style="background:var(--accent); color:var(--bg); padding:10px; border-top-left-radius:12px; border-top-right-radius:12px; display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-weight:700;">Asistente Solar 🤖</span>
+            <button id="closeChatbot" style="background:transparent; border:none; color:var(--bg); font-size:1.2rem; cursor:pointer;">&times;</button>
+        </div>
+        <div id="chatbox" style="padding:15px; height:calc(100% - 100px); overflow-y:auto; color:var(--muted)">
+            <p class="bot-message">Hola! Soy el Asistente Solar. Pregúntame sobre las variables, la metodología o los modelos de regresión utilizados en el proyecto.</p>
+        </div>
+        <div style="padding:10px; border-top:1px solid rgba(255,255,255,0.05); display:flex;">
+            <input type="text" id="chatInput" placeholder="Escribe tu pregunta..." />
+            <button id="sendChatBtn">Enviar</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
