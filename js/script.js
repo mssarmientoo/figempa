@@ -182,3 +182,68 @@ underConstructionLinks.forEach(link => (
     mainElement.innerHTML = underConstructionCode;
   })
 ));
+
+
+/* --------------------------------
+ LÓGICA DEL CHATBOT (CORREGIDA)
+ -------------------------------- */
+(function () {
+    const chatbotBtn = document.getElementById('chatbotBtn');
+    const chatbotModal = document.getElementById('chatbotModal');
+    const closeChatbotBtn = document.getElementById('closeChatbot');
+    const chatbox = document.getElementById('chatbox');
+    const chatInput = document.getElementById('chatInput');
+    const sendChatBtn = document.getElementById('sendChatBtn');
+
+    chatbotBtn.addEventListener('click', function () {
+        chatbotModal.style.display = (chatbotModal.style.display === 'none' || chatbotModal.style.display === '') ? 'block' : 'none';
+    });
+
+    closeChatbotBtn.addEventListener('click', function () {
+        chatbotModal.style.display = 'none';
+    });
+
+    // --- INICIO DE CORRECCIÓN ---
+    // Función para normalizar texto (quitar acentos y minúsculas)
+    function normalizeText(text) {
+        return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function sendMessage() {
+        const message = chatInput.value.trim();
+        if (message) {
+            // Muestra el mensaje del usuario
+            chatbox.innerHTML += `<p class="user-message">Tú: ${message}</p>`;
+            const normalizedMessage = normalizeText(message); // Normaliza el mensaje
+            chatInput.value = ''; // Limpia el input
+
+            // Simula una respuesta del bot
+            setTimeout(() => {
+                let botResponse = "Lo siento, no entiendo tu pregunta en este momento. Intenta preguntarme sobre 'variables', 'metodologia' o 'equipo'.";
+
+                // Compara el mensaje normalizado
+                if (normalizedMessage.includes("variable")) {
+                    botResponse = "Las variables principales incluyen potencia instalada (MW), factor de planta (%), irradiancia y tipo de panel.";
+                } else if (normalizedMessage.includes("metodologia")) {
+                    botResponse = "La metodología implica recolección de datos de fuentes oficiales, depuración con Python/Pandas y estandarización.";
+                } else if (normalizedMessage.includes("regresion")) {
+                    botResponse = "Utilizamos modelos lineales y no lineales para estimar la producción y técnicas como cross-validation para validación.";
+                } else if (normalizedMessage.includes("equipo") || normalizedMessage.includes("nombres")) {
+                    botResponse = "El equipo está conformado por Sarmiento Martín, Miles Juleidy, Neira Fernando, Ramírez Carlos y Masías Elías.";
+                }
+
+                chatbox.innerHTML += `<p class="bot-message">Asistente Solar: ${botResponse}</p>`;
+                chatbox.scrollTop = chatbox.scrollHeight; // Scroll al final
+            }, 1000); // Retraso de 1 segundo para la respuesta
+        }
+    }
+    // --- FIN DE CORRECCIÓN ---
+
+    sendChatBtn.addEventListener('click', sendMessage);
+
+    chatInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+})();
