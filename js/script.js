@@ -117,15 +117,25 @@ const descriptiveStatisticsCode = `
   </section>
 
   <section class="section-box" id="ds-methodology">
-    <h1 class="title-2">Metodología</h1>
+    <h2 class="title-2">Metodología</h2>
     <div class="met-container">
-      <article>
-        <h2 class="title-3">Población</h2>
-        <p>Es el conjunto total de elementos o individuos que comparten una o varias características y sobre los cuales se desea obtener información.</p>
+      <article class="population">
+        <h3 class="title-3">Población</h3>
+        <h4 class="title-4">Textual:</h4>
+        <p>Todas la plantas solares existentes en el mundo.</p>
+        <h4 class="title-4">Simbólico:</h4>
+        <p>U = { x | x ∈ Planta solar ∧ ubicación(x) = "Mundial" }</p>
+
       </article>
-      <article>
-        <h2 class="title-3">Individuo</h2>
-        <p>El individuo (también llamado unidad estadística) es cada uno de los elementos que forman parte de la población y sobre los cuales se realiza la observación o medición.</p>
+      <article class="bloke">
+        <h3 class="title-3">Individuo</h3>
+        <h4 class="title-4">Textual:</h4>
+        <p>Plantas solares dentro del análisis mundial.</p>
+        <h4 class="title-4">Simbólico:</h4>
+        <p>
+          x<sub>i</sub> ∈ U<br>
+          i = 1, 2, 3, ..., N
+        </p>
       </article>
     </div>
   </section>
