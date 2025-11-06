@@ -552,7 +552,7 @@ p {
 }
 
 .chatInput-container {
-  width: 100%;
+  /* width: 100%; */
   padding:10px;
   display:flex;
   gap: 0.5rem;
@@ -561,8 +561,9 @@ p {
 }
 
 .chat-input {
+  width: 75%;
   padding: 8px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: var(--bg);
@@ -571,7 +572,8 @@ p {
 
 .sendChat-btn {
   cursor: pointer;
-  padding: 0.5rem 0.7rem;
+  width: 25%;
+  padding: 0.5rem;
   border: none;
   border-radius: 6px;
   font-weight: 600;
