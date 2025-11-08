@@ -149,11 +149,6 @@ p {
   --transform: rotate(-90deg);
 }
 
-.navitem:hover {
-  --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  --transform: rotate(0deg);
-}
-
 .navitem-arrow {
   display: block;
   margin-left: 0.1rem;
@@ -173,9 +168,9 @@ p {
   transition: all 0.5s;
 }
 
-.navitem:hover .navlist-nested {
+/* .navitem:hover .navlist-nested {
   position: relative;
-}
+} */
 
 /* MAIN */
 
@@ -450,8 +445,17 @@ p {
     backdrop-filter: blur(8px);
   }
 
+  .navitem:hover {
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0deg);
+  }
+
   .navitem:hover .navlist-nested {
     position: absolute;
+  }
+
+  .navlink:hover {
+    color: var(--accent);
   }
 
   .card-box {
@@ -463,10 +467,6 @@ p {
     align-items:center;
     gap: 4rem;
   }
-}
-
-.navlink:hover {
-  color: var(--accent);
 }
 
 .social-link:hover {
