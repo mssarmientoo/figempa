@@ -330,7 +330,9 @@ p {
   text-align: center;
 }
 
-.population {
+.population,
+.bloke,
+.sample {
   margin-bottom: 3.5rem;
 }
 

@@ -121,7 +121,7 @@ const aboutProyectCode = `
     <p class="general-objective">Aplicar la estadística y Machine learning para examinar las plantas solares a nivel mundial, mediante el uso de herramientas computacionales. </p>
     <h3 class="title-3">Objetivos especificos:</h3>
     <ol class="objectives-list">
-        <li class="objectives-items">Conocer la situación actual de las plantas solares a nivel mundial a través de sus Caracteristicas mas importantes y medidas estadísticas.</li>
+        <li class="objectives-items">Conocer la situación actual de las plantas solares a nivel mundial a través de sus características más importantes y medidas estadísticas.</li>
         <li class="objectives-items">Emplear un modelo de probabilidad para establecer conclusiones sobre las plantas solares en el mundo a partir de los resultados de muestra.</li>
         <li class="objectives-items">Deducir relaciones entre variables de las plantas solares a nivel mundial con el fin de realizar estimaciones.</li>
     </ol>
@@ -150,20 +150,30 @@ const descriptiveStatisticsCode = `
       <article class="population">
         <h3 class="title-3">Población</h3>
         <h4 class="title-4">Textual:</h4>
-        <p>Todas la plantas solares existentes en el mundo.</p>
+        <p>Todas la plantas solares a nivel mundial.</p>
         <h4 class="title-4">Simbólico:</h4>
-        <p>U = { x | x ∈ Planta solar ∧ ubicación(x) = "Mundial" }</p>
-
+        <p>U = { x | x ∈ Plantas Solares ∧ Ubicación(x) ∈ "Mundo" }</p>
       </article>
       <article class="bloke">
         <h3 class="title-3">Individuo</h3>
         <h4 class="title-4">Textual:</h4>
-        <p>Plantas solares dentro del análisis mundial.</p>
+        <p>Cada planta solar a nivel mundial.</p>
         <h4 class="title-4">Simbólico:</h4>
-        <p>
-          x<sub>i</sub> ∈ U<br>
-          i = 1, 2, 3, ..., N
-        </p>
+        <p>X<sub>i</sub> donde i = 1, 2, 3, 4, ..., +&#8734;</p>
+      </article>
+      <article class="sample">
+        <h3 class="title-3">Muestra</h3>
+        <h4 class="title-4">Textual:</h4>
+        <p>Un subconjunto representativo de plantas solares actualmente en operación a nivel mundial.</p>
+        <h4 class="title-4">Simbólico:</h4>
+        <p>M={ x | x ∈ Plantas solares ∧ Ubicación(x) ∈ "Mundo" ∧ Estado(x)="Operación" }</p>
+      </article>
+      <article class="study-case">
+        <h3 class="title-3">Caso de estudio</h3>
+        <h4 class="title-4">Textual:</h4>
+        <p>Cada planta solar que se encuentra actualmente en operación a nivel mundial.</p>
+        <h4 class="title-4">Simbólico:</h4>
+        <p>X<sub>i</sub> donde i = 1, 2, 3, 4, ..., 57936</p>
       </article>
     </div>
   </section>
