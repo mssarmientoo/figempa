@@ -144,7 +144,7 @@ const descriptiveStatisticsCode = `
     <p>Aquí se mostrará el análisis exploratorio: conteos, distribuciones, histogramas, y tablas resumen por región y tipo de planta.</p>
   </section>
 
-  <section class="section-box" id="ds-methodology">
+  <section class="section-box ds-methodology-section" id="ds-methodology">
     <h2 class="title-2">Metodología</h2>
     <div class="met-container">
       <article class="population">

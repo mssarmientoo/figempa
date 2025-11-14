@@ -330,10 +330,9 @@ p {
   text-align: center;
 }
 
-.population,
-.bloke,
-.sample {
-  margin-bottom: 3.5rem;
+.met-container {
+  display: grid;
+  gap: 1rem;
 }
 
 .title-4 {
@@ -413,6 +412,26 @@ p {
     width: 50%;
     text-align: center;
   }
+
+  .ds-methodology-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .ds-methodology-section .title-2 {
+    margin-bottom: 2rem;
+  }
+
+  .met-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .met-container .title-3 {
+    margin: 0 0 1rem;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -468,6 +487,19 @@ p {
     justify-content: center;
     align-items:center;
     gap: 4rem;
+  }
+
+  .ds-methodology-section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .ds-methodology-section .title-2{
+    margin-bottom: 3rem;
+  }
+
+  .met-container {
+    gap: 2.5rem 4rem;
   }
 }
 
