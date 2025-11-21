@@ -168,10 +168,6 @@ p {
   transition: all 0.5s;
 }
 
-/* .navitem:hover .navlist-nested {
-  position: relative;
-} */
-
 /* MAIN */
 
 .title-1 {
@@ -331,6 +327,7 @@ p {
 }
 
 .met-container {
+  margin-bottom: 2rem;
   display: grid;
   gap: 1rem;
 }
@@ -341,6 +338,30 @@ p {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text);
+}
+
+.varibles-table {
+  width: 100%;
+  min-height: 500px;
+  overflow-x: auto;
+  border-radius: 0.5rem;
+}
+
+.boton-abrir-externo {
+    /* Estilos para que se vea como un botón */
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #1a73e8; /* Color azul de Google */
+    color: white;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 4px;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
+}
+
+.boton-abrir-externo:hover {
+    background-color: #0d5ad6;
 }
 
 .under-construction-img {

@@ -176,6 +176,17 @@ const descriptiveStatisticsCode = `
         <p>X<sub>i</sub> donde i = 1, 2, 3, 4, ..., 57936</p>
       </article>
     </div>
+    <div>
+      <h2 class="title-2">Tabla de variables</h2>
+
+      <iframe class="varibles-table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPdYlLX7_NKZ1VafXC-7KRWtlHjp6stlj6ywUzQzt_25XI3jXD4hpEY8u2JejFng/pubhtml?gid=436771283&&single=true&chrome=false&widget=false&headers=true"></iframe>
+
+      <a href="https://docs.google.com/spreadsheets/d/1OxlxfP1gWkoZjoOgeI-uo8XXsAFGeRp0/edit?gid=436771283#gid=436771283"
+       target="_blank"
+       class="boton-abrir-externo">
+        Abrir Documento Completo
+      </a>
+    </div>
   </section>
 `;
 
