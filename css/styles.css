@@ -364,6 +364,50 @@ p {
     background-color: #0d5ad6;
 }
 
+.ds-vcualit-article {
+  width: 100%;
+}
+
+.ds-vcualit-article .title-3 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ds-vcualit-img-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.ds-vcualit-img-container figure {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px 2px var(--text);
+  overflow: hidden;
+}
+
+.ds-vcualit-img {
+  width: 100%;
+  min-width: 150px;
+  max-width: 400px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.ds-vcualit-img-container figcaption {
+  padding: 3px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #222222;
+  color: white;
+}
+
 .under-construction-img {
   width: 95%;
   max-width: 400px;
@@ -459,7 +503,7 @@ p {
   .menu-btn {
     display: none;
   }
-  
+
   .navbar {
     position: relative;
     top: 0;
