@@ -195,43 +195,43 @@ const descriptiveStatisticsCode = `
       <div class="ds-vcualit-img-container">
         <a href="https://rpubs.com/mssarmiento/1373734" target="_blanket">
         <figure>
-          <img src="../assets/images/vcualit/country.webp" alt="Imagen representativa de la variable País." class="ds-vcualit-img"/>
+          <img src="/assets/images/vcualit/country.webp" alt="Imagen representativa de la variable País." class="ds-vcualit-img"/>
           <figcaption>País</figcaption>
         </figure>
         </a>
         <a href="#" target="_blanket">
         <figure>
-          <img src="../assets/images/vcualit/plant_name.jpg" alt="Imagen representativa de la variable Nombre de planta" class="ds-vcualit-img">
+          <img src="/assets/images/vcualit/plant_name.jpg" alt="Imagen representativa de la variable Nombre de planta" class="ds-vcualit-img">
           <figcaption>Nombre de Planta</figcaption>
         </figure>
         </a>
         <a href="https://rpubs.com/mssarmiento/1373731" target="_blanket">
         <figure>
-          <img src="../assets/images/vcualit/operational_status.jpg" alt="Imagen representativa de la variable Estado operacional" class="ds-vcualit-img">
+          <img src="/assets/images/vcualit/operational_status.jpg" alt="Imagen representativa de la variable Estado operacional" class="ds-vcualit-img">
           <figcaption>Estado operacional</figcaption>
         </figure>
         </a>
         <a href="https://rpubs.com/mssarmiento/1373730" target="_blanket">
         <figure>
-          <img src="../assets/images/vcualit/slope_type.png" alt="Imagen representativa de la variable Tipo de pendiente" class="ds-vcualit-img">
+          <img src="/assets/images/vcualit/slope_type.png" alt="Imagen representativa de la variable Tipo de pendiente" class="ds-vcualit-img">
           <figcaption>Tipo de pendiente</figcaption>
         </figure>
         </a>
         <a href="https://rpubs.com/mssarmiento/1373733" target="_blanket">
         <figure>
-          <img src="../assets/images/vcualit/curvature_type.avif" alt="Imagen representativa de la variable Tipo de curvatura" class="ds-vcualit-img">
+          <img src="/assets/images/vcualit/curvature_type.avif" alt="Imagen representativa de la variable Tipo de curvatura" class="ds-vcualit-img">
           <figcaption>Tipo de curvatura</figcaption>
         </figure>
         </a>
         <a href="https://rpubs.com/mssarmiento/1373735" target="_blanket">
         <figure>
-          <img src="../assets/images/vcualit/aspect_type.avif" alt="Imagen representativa de la variable Tipo de aspecto" class="ds-vcualit-img">
+          <img src="/assets/images/vcualit/aspect_type.avif" alt="Imagen representativa de la variable Tipo de aspecto" class="ds-vcualit-img">
           <figcaption>Tipo de aspecto</figcaption>
         </figure>
         </a>
         <a href="https://rpubs.com/mssarmiento/1373728" target="_blanket">
         <figure>
-          <img src="../assets/images/vcualit/solar_aptitude.png" alt="Imagen representativa de la varible Aptitud solar" class="ds-vcualit-img">
+          <img src="/assets/images/vcualit/solar_aptitude.png" alt="Imagen representativa de la varible Aptitud solar" class="ds-vcualit-img">
           <figcaption>Aptitud solar</figcaption>
         </figure>
         </a>

@@ -398,6 +398,7 @@ p {
   max-width: 400px;
   height: 280px;
   object-fit: cover;
+  transition: transform 0.5s;
 }
 
 .ds-vcualit-img-container figcaption {
@@ -406,6 +407,10 @@ p {
   font-size: 1.5rem;
   background-color: #222222;
   color: white;
+}
+
+.ds-vcualit-img-container figure:hover .ds-vcualit-img {
+  transform: scale(1.2);
 }
 
 .under-construction-img {
