@@ -192,6 +192,7 @@ const descriptiveStatisticsCode = `
     <h2 class="title-2">Variables</h2>
     <article class="ds-vcualit-article">
       <h3 class="title-3">Variables cualitativas</h3>
+      <h4 class="title-4">Nominales</h4>
       <div class="ds-vcualit-img-container">
         <a href="https://rpubs.com/mssarmiento/1373734" target="_blanket">
         <figure>
@@ -223,7 +224,7 @@ const descriptiveStatisticsCode = `
           <figcaption>Tipo de curvatura</figcaption>
         </figure>
         </a>
-        <a href="https://rpubs.com/mssarmiento/1373735" target="_blanket">
+        <a href="https://rpubs.com/mssarmiento/1374856" target="_blanket">
         <figure>
           <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/aspect_type.avif" alt="Imagen representativa de la variable Tipo de aspecto" class="ds-vcualit-img">
           <figcaption>Tipo de aspecto</figcaption>
