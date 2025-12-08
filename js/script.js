@@ -199,15 +199,15 @@ const dSVariablesCualitatives = `
 
     <span>
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/plant_name.jpg" alt="Imagen representativa de la variable Nombre de planta" class="ds-vcualit-img">
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/plant-name.webp" alt="Imagen representativa de la variable Nombre de planta" class="ds-vcualit-img">
         <figcaption>Nombre de la Planta</figcaption>
       </figure>
     </span>
 
     <a href="https://rpubs.com/mssarmiento/1377294" target="_blanket">
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/curvature_type.avif" alt="Imagen representativa de la variable Tipo de curvatura" class="ds-vcualit-img">
-        <figcaption>Tipo de curvatura</figcaption>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/curvature-type.webp" alt="Imagen representativa de la variable Tipo de curvatura" class="ds-vcualit-img">
+        <figcaption>Tipo de Curvatura</figcaption>
       </figure>
     </a>
 
@@ -217,29 +217,29 @@ const dSVariablesCualitatives = `
   <div class="ds-vcualit-ordinals">
     <a href="https://rpubs.com/mssarmiento/1377284" target="_blanket">
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/operational_status.jpg" alt="Imagen representativa de la variable Estado operacional" class="ds-vcualit-img">
-        <figcaption>Estado operacional</figcaption>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/operational-status.webp" alt="Imagen representativa de la variable Estado operacional" class="ds-vcualit-img">
+        <figcaption>Estado Operacional</figcaption>
       </figure>
     </a>
 
     <a href="https://rpubs.com/mssarmiento/1377288" target="_blanket">
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/slope_type.png" alt="Imagen representativa de la variable Tipo de pendiente" class="ds-vcualit-img">
-        <figcaption>Tipo de pendiente</figcaption>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/slope-type.webp" alt="Imagen representativa de la variable Tipo de pendiente" class="ds-vcualit-img">
+        <figcaption>Tipo de Pendiente</figcaption>
       </figure>
     </a>
 
     <a href="https://rpubs.com/mssarmiento/1377290" target="_blanket">
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/aspect_type.avif" alt="Imagen representativa de la variable Tipo de aspecto" class="ds-vcualit-img">
-        <figcaption>Tipo de aspecto</figcaption>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/aspect-type.webp" alt="Imagen representativa de la variable Tipo de aspecto" class="ds-vcualit-img">
+        <figcaption>Tipo de Aspecto</figcaption>
       </figure>
     </a>
 
     <a href="https://rpubs.com/mssarmiento/1377292" target="_blanket">
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/solar_aptitude.png" alt="Imagen representativa de la varible Aptitud solar" class="ds-vcualit-img">
-        <figcaption>Aptitud solar</figcaption>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/solar-aptitude-type.webp" alt="Imagen representativa de la varible Aptitud solar" class="ds-vcualit-img">
+        <figcaption>Tipo de Aptitud Solar</figcaption>
       </figure>
     </a>
 
@@ -331,7 +331,7 @@ const dSVariablesCuantitatives = `
 
     <a href="https://rpubs.com/mssarmiento/1377304" target="_blanket">
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/solar-aptitud.webp" alt="Imagen representativa de la variable Aptitud Solar" class="ds-vcuanti-img"/>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/solar-aptitude.webp" alt="Imagen representativa de la variable Aptitud Solar" class="ds-vcuanti-img"/>
         <figcaption>Aptitud Solar</figcaption>
       </figure>
     </a>
