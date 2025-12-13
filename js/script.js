@@ -2,6 +2,7 @@ const body = document.querySelector("body");
 const homeLink = document.querySelector("#home-link");
 const aboutProyectLink = document.querySelector("#about-proyect-link");
 const descriptiveStatisticsLink = document.querySelector("#descriptive-statistics-link");
+const aboutUsLink = document.querySelector("#about-us-link");
 const underConstructionLinks = document.querySelectorAll(".under-construction");
 const mainElement = document.querySelector("main");
 const header = document.querySelector(".header");
@@ -418,6 +419,36 @@ const descriptiveStatisticsCode = `
   ${dSVariables}
 `;
 
+const aboutUsHTML = `
+<h1 class="title-1">Sobre Nosotros</h1>
+<div class="section-box">
+  <p class="about-us-description">Somos estudiantes de segundo semestre de la Universidad Central del Ecuador, pertenecientes a la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental (FIGEMPA), en la carrera de Ingeniería en Petróleos. En el marco de la asignatura de Estadística, presentamos este proyecto con el objetivo de ofrecer información clara, pertinente y accesible para quienes se interesan en esta área del conocimiento.</p>
+  <p class="about-us-description">Como futuros profesionales, aspiramos a formarnos como ingenieros comprometidos, preparados y apasionados, capaces de contribuir al desarrollo de una industria que avanza de manera constante gracias a la innovación tecnológica y al estudio científico de las energias sostenibles.</p>
+  <p class="about-us-description">Confiamos en el valor del aprendizaje conjunto y en la importancia de compartir saberes. Por ello, este trabajo no solo constituye un componente de nuestra formación académica, sino también un aporte para fomentar una comprensión más sólida de un campo tan dinámico y relevante en el contexto actual.</p>
+</div>
+<section class="section-box">
+  <h2 class="title-2">Nuestro Equipo</h2>
+  <p>A continuación tienes disponible los curriculum vitae de cada uno de los integrantes que conforman este grupo de trabajo.</p>
+  <div class="cvs-container">
+    <a href="assets/cvs/cv-elias-macias.pdf" download class="cv-link">
+      Elías Macías
+    </a>
+    <a href="assets/cvs/cv-juleidy-miles.pdf" download class="cv-link">
+      Juleidy Miles
+    </a>
+    <a href="assets/cvs/cv-fernando-neira" download class="cv-link">
+      Fernando Neira
+    </a>
+    <a href="assets/cvs/cv-carlos-ramirez" download class="cv-link">
+      Carlos Ramírez
+    </a>
+    <a href="assets/cvs/cv-martin-sarmiento" download class="cv-link">
+      Martín Sarmiento
+    </a>
+  </div>
+</section>
+`;
+
 const underConstructionCode = `
   <h1 class="title-1">En construcción</h1>
   <img src="assets/images/under-construction.png" alt="Escena de construcción" class="under-construction-img">
@@ -472,6 +503,13 @@ navlDSLinks.forEach(link => {
     mainElement.innerHTML = "";
     mainElement.innerHTML = descriptiveStatisticsCode;
   })
+});
+
+aboutUsLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
+  mainElement.innerHTML = "";
+  mainElement.innerHTML = aboutUsHTML;
 });
 
 underConstructionLinks.forEach(link => (

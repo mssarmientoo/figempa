@@ -470,6 +470,36 @@ p {
   transform: scale(1.2);
 }
 
+/* About Us */
+.about-us-description {
+  text-align: center;
+}
+
+.cvs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cv-link {
+  width: 60%;
+  max-width: 250px;
+  min-width: 180px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--text);
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.cv-link:hover {
+  background-color: var(--muted);
+  color: var(--bg);
+}
+
 /* Pages under construction */
 .under-construction-img {
   width: 95%;
