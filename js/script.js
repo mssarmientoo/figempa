@@ -436,13 +436,13 @@ const aboutUsHTML = `
     <a href="assets/cvs/cv-juleidy-miles.pdf" download class="cv-link">
       Juleidy Miles
     </a>
-    <a href="assets/cvs/cv-fernando-neira" download class="cv-link">
+    <a href="assets/cvs/cv-fernando-neira.pdf" download class="cv-link">
       Fernando Neira
     </a>
-    <a href="assets/cvs/cv-carlos-ramirez" download class="cv-link">
+    <a href="assets/cvs/cv-carlos-ramirez.pdf" download class="cv-link">
       Carlos Ramírez
     </a>
-    <a href="assets/cvs/cv-martin-sarmiento" download class="cv-link">
+    <a href="assets/cvs/cv-martin-sarmiento.pdf" download class="cv-link">
       Martín Sarmiento
     </a>
   </div>
