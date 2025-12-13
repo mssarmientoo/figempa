@@ -433,7 +433,7 @@ const aboutUsHTML = `
     <a href="assets/cvs/cv-elias-macias.pdf" download class="cv-link">
       Elías Macías
     </a>
-    <a href="assets/cvs/cv-juleidy-miles.pdf" download class="cv-link">
+    <a href="assets/cvs/cv-juleydi-miles.pdf" download class="cv-link">
       Juleidy Miles
     </a>
     <a href="assets/cvs/cv-fernando-neira.pdf" download class="cv-link">
