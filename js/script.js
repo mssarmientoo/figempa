@@ -216,7 +216,7 @@ const dSVariablesCualitatives = `
 
   <h4 class="title-4">Ordinales</h4>
   <div class="ds-vcualit-ordinals">
-    <a href="https://rpubs.com/mssarmiento/1377284" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1377282" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/operational-status.webp" alt="Imagen representativa de la variable Estado operacional" class="ds-vcualit-img">
         <figcaption>Estado Operacional</figcaption>
@@ -358,7 +358,7 @@ const dSVariablesCuantitatives = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1377308" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1380337" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/temperatura.webp" alt="Imagen representativa de la variable Temperatura Ambiente" class="ds-vcuanti-img"/>
         <figcaption>Temperatura Ambiente</figcaption>
@@ -430,19 +430,19 @@ const aboutUsHTML = `
   <h2 class="title-2">Nuestro Equipo</h2>
   <p>A continuación tienes disponible los curriculum vitae de cada uno de los integrantes que conforman este grupo de trabajo.</p>
   <div class="cvs-container">
-    <a href="assets/cvs/cv-elias-macias.pdf" download class="cv-link">
+    <a href="https://drive.google.com/file/d/1y4iccqOK6ZTA8z6du5rtk2dPVm5r94BA/view" class="cv-link" target="_blank">
       Elías Macías
     </a>
-    <a href="assets/cvs/cv-juleydi-miles.pdf" download class="cv-link">
-      Juleidy Miles
+    <a href="https://drive.google.com/file/d/11WPCxRfqv5hjF0s9hDhdZ_GaTpqCX-b5/view" class="cv-link" target="_blank">
+      Juleydi Miles
     </a>
-    <a href="assets/cvs/cv-fernando-neira.pdf" download class="cv-link">
+    <a href="https://drive.google.com/file/d/1aJVdtwGPSzCrZ5pc1UhYQBmNGCTNFphF/view" class="cv-link" target="_blank">
       Fernando Neira
     </a>
-    <a href="assets/cvs/cv-carlos-ramirez.pdf" download class="cv-link">
+    <a href="https://drive.google.com/file/d/1tNijknCiQ28rFS-BwimOE6KYhisE6F6m/view" class="cv-link" target="_blank">
       Carlos Ramírez
     </a>
-    <a href="assets/cvs/cv-martin-sarmiento.pdf" download class="cv-link">
+    <a href="https://drive.google.com/file/d/1xlbUEJBGBklpkwEaIfvgxBt-8x-isuBu/view" class="cv-link" target="_blank">
       Martín Sarmiento
     </a>
   </div>
