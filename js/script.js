@@ -117,7 +117,19 @@ const homeCode = `
 
 // About project
 const aboutProyectCode = `
-  <h1 class="title-1">Acerca del Proyecto</h1>
+  <h1 class="title-1">INTRODUCCIÓN</h1>
+
+  <section class="problem section-box" id="problem">
+    <h2 class="title-2">PLANTEAMIENTO DEL PROBLEMA</h2>
+    <p class="problem-desc">El análisis estadístico de las plantas solares a nivel mundial es clave para medir su eficiencia real. Este proyecto utilizará una base de datos propia para transformar la información bruta de las plantas (como su capacidad y ubicación) en insumos relevantes. El objetivo es aplicar la estadística para entender qué factores determinan de verdad el rendimiento energético a escala global.</p>
+    <p class="problem-desc">La información utilizada para este estudio fue obtenida desde la plataforma Kaggle, NASA Power Data y Global Solar Atlas, cumpliendo con los criterios establecidos para el proyecto.</p>
+  </section>
+
+  <section class="map-container section-box" id="map">
+    <h2 class="title-2">Mapa de Ubicación Geográfica</h2>
+    <img src="assets/images/map.jpg" alt="mapamundi" class="map-img">
+  </section>
+
   <section class="objectives section-box" id="objectives">
     <h2 class="title-2">OBJETIVOS</h2>
     <h3 class="title-3">Objetivo General:</h3> 
@@ -129,16 +141,6 @@ const aboutProyectCode = `
         <li class="objectives-items">Deducir relaciones entre variables de las plantas solares a nivel mundial con el fin de realizar estimaciones.</li>
     </ol>
   </section>
-
-  <section class="problem section-box" id="problem">
-    <h2 class="title-2">PLANTEAMIENTO DEL PROBLEMA</h2>
-    <p class="problem-desc">El análisis estadístico de las plantas solares a nivel mundial es clave para medir su eficiencia real. Este proyecto utilizará una base de datos propia para transformar la información bruta de las plantas (como su capacidad y ubicación) en insumos relevantes. El objetivo es aplicar la estadística para entender qué factores determinan de verdad el rendimiento energético a escala global.</p>
-    <p class="problem-desc">La información utilizada para este estudio fue obtenida desde la plataforma Kaggle, NASA Power Data y Global Solar Atlas, cumpliendo con los criterios establecidos para el proyecto.</p>
-  </section>
-
-  <div class="map-container section-box">
-    <img src="assets/images/map.jpg" alt="mapamundi" class="map-img">
-  </div>
 `;
 
 // Descriptive Statistics parts
@@ -147,32 +149,32 @@ const dSMethodology = `
     <h2 class="title-2">Metodología</h2>
     <div class="met-container">
       <article class="population">
-        <h3 class="title-3">Población</h3>
+        <h3 class="title-3">POBLACIÓN</h3>
         <h4 class="title-4">Textual:</h4>
         <p>Todas la plantas solares a nivel mundial.</p>
         <h4 class="title-4">Simbólico:</h4>
         <p>U = { x | x ∈ Plantas Solares ∧ Ubicación(x) ∈ "Mundo" }</p>
       </article>
       <article class="bloke">
-        <h3 class="title-3">Individuo</h3>
+        <h3 class="title-3">INDIVIDUO</h3>
         <h4 class="title-4">Textual:</h4>
         <p>Cada planta solar a nivel mundial.</p>
         <h4 class="title-4">Simbólico:</h4>
         <p>X<sub>i</sub> donde i = 1, 2, 3, 4, ..., +&#8734;</p>
       </article>
       <article class="sample">
-        <h3 class="title-3">Muestra</h3>
+        <h3 class="title-3">MUESTRA</h3>
         <h4 class="title-4">Textual:</h4>
-        <p>Un subconjunto representativo de plantas solares actualmente en operación a nivel mundial.</p>
+        <p>Un subconjunto representativo de plantas solares a nivel mundial que abarca todos los estados de desarrollo.</p>
         <h4 class="title-4">Simbólico:</h4>
-        <p>M={ x | x ∈ Plantas solares ∧ Ubicación(x) ∈ "Mundo" ∧ Estado(x)="Operación" }</p>
+        <p>M={ x | x ∈ Plantas solares ∧ Ubicación(x) ∈ "Mundo" }</p>
       </article>
       <article class="study-case">
-        <h3 class="title-3">Caso de estudio</h3>
+        <h3 class="title-3">CASO DE ESTUDIO</h3>
         <h4 class="title-4">Textual:</h4>
-        <p>Cada planta solar que se encuentra actualmente en operación a nivel mundial.</p>
+        <p>Cada planta solar registrada, independientemente de su estado operativo actual.</p>
         <h4 class="title-4">Simbólico:</h4>
-        <p>X<sub>i</sub> donde i = 1, 2, 3, 4, ..., 57936</p>
+        <p>X<sub>i</sub> donde i = 1, 2, 3, 4, ..., N</p>
       </article>
     </div>
   </section>
@@ -184,13 +186,6 @@ const dSVariablesCualitatives = `
 
   <h4 class="title-4">Nominales</h4>
   <div class="ds-vcualit-nominals">
-    <span>
-      <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/code.webp" alt="Imagen representativa de la variable País." class="ds-vcualit-img"/>
-        <figcaption>Código</figcaption>
-      </figure>
-    </span>
-
     <a href="https://rpubs.com/mssarmiento/1377293" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/country.webp" alt="Imagen representativa de la variable País." class="ds-vcualit-img"/>
@@ -251,25 +246,6 @@ const dSVariablesCualitatives = `
 const dSVariablesCuantitatives = `
 <article class="ds-vcuanti-images">
   <h3 class="title-3">Variables Cuantitativas</h3>
-
-  <h4 class="title-4">Discretas</h4>
-  <div class="ds-vcuanti-discretes">
-    
-    <span>
-      <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/fid.webp" alt="Imagen representativa de la variable FID" class="ds-vcuanti-img"/>
-        <figcaption>FID</figcaption>
-      </figure>
-    </span>
-
-    <span>
-      <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/objectid.webp" alt="Imagen representativa de la variable ObjectID" class="ds-vcuanti-img"/>
-        <figcaption>ObjectID</figcaption>
-      </figure>
-    </span>
-
-  </div>
 
   <h4 class="title-4">Continuas</h4>
   <div class="ds-vcuanti-continuos">
@@ -358,7 +334,7 @@ const dSVariablesCuantitatives = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1380337" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1381940" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/temperatura.webp" alt="Imagen representativa de la variable Temperatura Ambiente" class="ds-vcuanti-img"/>
         <figcaption>Temperatura Ambiente</figcaption>
@@ -391,21 +367,33 @@ const dSVariablesCuantitatives = `
 </article>
 `;
 
-const dSVariables = `  
-<section class="section-box ds-variables-section" id="ds-variables">
-  <h2 class="title-2">Variables</h2>
-  <article class="ds-variable-tables">
-    <h3 class="title-3">Tabla de Variables</h3>
-
+const dSVariables = `
+<section class="section-box ds-variable-tables" id="ds-variables-tables">
+  
+  <h2 class="title-2">TABLA DE VARIABLES</h2>
+  <div>
     <iframe class="varibles-table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPdYlLX7_NKZ1VafXC-7KRWtlHjp6stlj6ywUzQzt_25XI3jXD4hpEY8u2JejFng/pubhtml?gid=436771283&&single=true&chrome=false&widget=false&headers=true"></iframe>
-
+    
     <a href="https://docs.google.com/spreadsheets/d/1OxlxfP1gWkoZjoOgeI-uo8XXsAFGeRp0/edit?gid=436771283#gid=436771283"
       target="_blank"
       class="open-external-file">
       Abrir Documento Completo
     </a>
-  </article>
+  </div>
 
+  <h2 class="title-2">TABLA DE INDICADORES</h2>
+  <div>
+    <iframe class="varibles-table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfSg1xyD8fXx6zGWAkHF_6MhmX-V1F1CcKGPEYPm2SEagGscrKvoFu7IeLm8onaw/pubhtml?gid=2064573701&amp;single=true&amp;chrome=false&amp;widget=false&amp;headers=true"></iframe>
+
+    <a href="https://docs.google.com/spreadsheets/d/1J1y-nt62qz_h4md9Z-qXavRisDjFXZPO/edit?gid=2064573701#gid=2064573701"
+      target="_blank"
+      class="open-external-file last-open-external-file">
+      Abrir Documento Completo
+    </a>
+  </div>
+</section>
+<section class="section-box ds-variables-section" id="ds-variables">
+  <h2 class="title-2">Variables</h2>
   ${dSVariablesCualitatives}
   ${dSVariablesCuantitatives}
 </section>
@@ -413,7 +401,7 @@ const dSVariables = `
 
 // Descriptive Statistics (DS) section
 const descriptiveStatisticsCode = `
-  <h1 class="title-1">Estadística Descriptiva</h1>
+  <h1 class="title-1">ESTADÍSTICA DESCRIPTIVA</h1>
 
   ${dSMethodology}
   ${dSVariables}
