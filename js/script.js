@@ -127,7 +127,7 @@ const aboutProyectCode = `
 
   <section class="map-container section-box" id="map">
     <h2 class="title-2">Mapa de Ubicación Geográfica</h2>
-    <img src="assets/images/map.jpg" alt="mapamundi" class="map-img">
+    <iframe src="https://drive.google.com/file/d/1GBVQRhBoctEpF-59a6TJw813tEui_zHr/preview" class="map-iframe" width="640"></iframe>
   </section>
 
   <section class="objectives section-box" id="objectives">
@@ -186,19 +186,19 @@ const dSVariablesCualitatives = `
 
   <h4 class="title-4">Nominales</h4>
   <div class="ds-vcualit-nominals">
-    <a href="https://rpubs.com/mssarmiento/1377293" target="_blanket">
-      <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/country.webp" alt="Imagen representativa de la variable País." class="ds-vcualit-img"/>
-        <figcaption>País</figcaption>
-      </figure>
-    </a>
-
     <span>
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/plant-name.webp" alt="Imagen representativa de la variable Nombre de planta" class="ds-vcualit-img">
         <figcaption>Nombre de la Planta</figcaption>
       </figure>
     </span>
+
+    <a href="https://rpubs.com/mssarmiento/1377293" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/country.webp" alt="Imagen representativa de la variable País." class="ds-vcualit-img"/>
+        <figcaption>País</figcaption>
+      </figure>
+    </a>
 
     <a href="https://rpubs.com/mssarmiento/1377294" target="_blanket">
       <figure>
@@ -247,6 +247,16 @@ const dSVariablesCuantitatives = `
 <article class="ds-vcuanti-images">
   <h3 class="title-3">Variables Cuantitativas</h3>
 
+  <h4 class="title-4">Discretas</h4>
+  <div class="ds-vcuanti-discretes">
+    <a href="https://rpubs.com/mssarmiento/1382693" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/sistema-solar-de-pv.webp" alt="Imagen representativa de la variable Aptitud Solar Redondeada" class="ds-vcuanti-img"/>
+        <figcaption>Aptitud Solar Redondeada</figcaption>
+      </figure>
+    </a>
+  </div>
+  
   <h4 class="title-4">Continuas</h4>
   <div class="ds-vcuanti-continuos">
   
@@ -334,7 +344,7 @@ const dSVariablesCuantitatives = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1381940" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1382725" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/temperatura.webp" alt="Imagen representativa de la variable Temperatura Ambiente" class="ds-vcuanti-img"/>
         <figcaption>Temperatura Ambiente</figcaption>
@@ -350,15 +360,15 @@ const dSVariablesCuantitatives = `
 
     <a href="https://rpubs.com/mssarmiento/1377310" target="_blanket">
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/max-power-hour.webp" alt="Imagen representativa de la variable Potencia Máxima por hora" class="ds-vcuanti-img"/>
-        <figcaption>Potencia Máxima por hora</figcaption>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/max-power-hour.webp" alt="Imagen representativa de la variable Potencial Fotovoltaico" class="ds-vcuanti-img"/>
+        <figcaption>Potencial Fotovoltaico</figcaption>
       </figure>
     </a>
 
     <a href="https://rpubs.com/mssarmiento/1377312" target="_blanket">
       <figure>
-        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/total-power.webp" alt="Imagen representativa de la variable Potencia Total" class="ds-vcuanti-img"/>
-        <figcaption>Potencia Total</figcaption>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/total-power.webp" alt="Imagen representativa de la variable Capacidad" class="ds-vcuanti-img"/>
+        <figcaption>Capacidad</figcaption>
       </figure>
     </a>
   
