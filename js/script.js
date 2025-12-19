@@ -121,8 +121,8 @@ const aboutProyectCode = `
 
   <section class="problem section-box" id="problem">
     <h2 class="title-2">PLANTEAMIENTO DEL PROBLEMA</h2>
-    <p class="problem-desc">El análisis estadístico de las plantas solares a nivel mundial es clave para medir su eficiencia real. Este proyecto utilizará una base de datos propia para transformar la información bruta de las plantas (como su capacidad y ubicación) en insumos relevantes. El objetivo es aplicar la estadística para entender qué factores determinan de verdad el rendimiento energético a escala global.</p>
-    <p class="problem-desc">La información utilizada para este estudio fue obtenida desde la plataforma Kaggle, NASA Power Data y Global Solar Atlas, cumpliendo con los criterios establecidos para el proyecto.</p>
+    <p class="problem-desc">El análisis de las plantas solares a nivel mundial es importante porque permite medir su eficiencia real y entender qué factores afectan su producción de energía. Al estudiar estos datos, se pueden identificar las mejores condiciones para aprovechar el sol y reducir los fallos en la generación eléctrica.</p>
+    <p class="problem-desc">La información utilizada para este estudio fue obtenida de las plataformas Kaggle, NASA Power Data, Global Solar Atlas y Global Wind Atlas, cumpliendo con los criterios establecidos para el proyecto.</p>
   </section>
 
   <section class="map-container section-box" id="map">
