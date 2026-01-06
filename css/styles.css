@@ -105,18 +105,18 @@ p {
 
 /* NavBar */
 .navbar {
-    position: fixed;
-    top: 5rem;
-    right: 1rem;
-    z-index: 17;
-    padding: 1.5rem 2rem;
-    border:1px solid rgba(255,255,255,0.03);
-    border-radius: 1rem;
-    background: linear-gradient(180deg, rgba(2,6,23,0.95), rgba(2,6,23,0.98));
-    color: var(--muted);
-    box-shadow:0 20px 50px rgba(0,0,0,0.6);
-    transform: translateX(250%);
-    transition: all 0.5s;
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  z-index: 17;
+  padding: 1.5rem 2rem;
+  border:1px solid rgba(255,255,255,0.03);
+  border-radius: 1rem;
+  background: linear-gradient(180deg, rgba(2,6,23,0.95), rgba(2,6,23,0.98));
+  color: var(--muted);
+  box-shadow:0 20px 50px rgba(0,0,0,0.6);
+  transform: translateX(250%);
+  transition: all 0.5s;
 }
 
 .navlist {
@@ -165,7 +165,22 @@ p {
   align-items: flex-end;
   gap: 1rem;
   clip-path: var(--clip);
-  transition: all 0.5s;
+}
+
+/* Drop-down menu styles */
+.selected-menu-option {
+  padding: 0.2rem;
+  background-color: #9fb9c6;
+  color: #0f2340;
+}
+
+.show-nested-menu {
+  position: relative; 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.rotate-arrow {
+  transform: rotate(0deg);
 }
 
 /* MAIN */
@@ -630,8 +645,10 @@ p {
     width: max-content;
     padding: 2rem;
     border-radius: 0 0 0.8rem 0.8rem;
-    background: var(--glass);
-    backdrop-filter: blur(8px);
+    border: 2px solid var(--accent);
+    border-top: none;
+    background-color: rgba(7, 18, 38, 0.95);
+    transition: all 0.3s;
   }
 
   .navitem:hover {

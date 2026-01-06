@@ -12,7 +12,7 @@ const middleBar = document.querySelector("#middle-bar");
 const bottomBar = document.querySelector("#bottom-bar");
 const navbar = document.querySelector("#navbar");
 const navLinks = document.querySelectorAll(".navlink");
-const navLinksDeploy = document.querySelectorAll(".navlink-deploy");
+const navLinksDropDown = document.querySelectorAll(".navlink-deploy");
 const navlProjectLinks = document.querySelectorAll(".navl-project");
 const navlDSLinks = document.querySelectorAll(".navl-ds");
 const heroVideoWrap = document.querySelector(".hero-video-wrap");
@@ -29,43 +29,88 @@ const toggleHamburguerMenuClases = () => {
   bottomBar.classList.toggle("convert-x-2");
   bottomBar.classList.toggle("convert-bars");
   navbar.classList.toggle("show-menu");
-  body.classList.toggle("block-overflow");
 };
 
+const resetDropDownMenu = () => {
+  navLinksDropDown.forEach(link => {
+    const paintedElement = link;
+    const nestedList = link.nextElementSibling;
+    const arrowImg = link.firstElementChild;
+
+    paintedElement.classList.remove("selected-menu-option");
+    nestedList.classList.remove("show-nested-menu");
+    arrowImg.classList.remove("rotate-arrow");
+  });
+}
+
 menuBtn.addEventListener("click", () => {
+  resetDropDownMenu();
   toggleHamburguerMenuClases();
 });
-
-const resetStyles = (element) => {
-  element.setAttribute("style", "");
-}
 
 navLinks.forEach(link => (
   link.addEventListener("click", (e) => {
     
     if (windowWidth < 1024) {
       const idLink = e.target.id;
+      const classElements = [...e.target.classList];
       if (idLink === "descriptive-statistics-link"
-          || idLink === "about-proyect-link") {
+          || idLink === "about-proyect-link"
+          || classElements.includes('navitem-arrow')) {
         return
       }
     }
 
     const targetLink = [...e.target.classList];
     if (targetLink.includes('navlink-inside')) {
-      const paintedElement = e.target.parentElement.parentElement.previousElementSibling;
-      const arrowImage = e.target.parentElement.parentElement.previousElementSibling.firstElementChild;
-      const nestedElement = e.target.parentElement.parentElement;
-
-      resetStyles(paintedElement);
-      resetStyles(arrowImage);
-      resetStyles(nestedElement);
+      resetDropDownMenu();
     }
     
+    resetDropDownMenu();
     toggleHamburguerMenuClases();
   })
 ));
 
+navLinksDropDown.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    
+    if (windowWidth < 1024) {
+
+      const classElements = [...e.target.classList];
+      let linkElement = null;
+      let nestedList = null;
+      let arrowImg = null;
+
+      if (classElements.includes('navitem-arrow')) {
+        linkElement = e.target.parentElement;
+        nestedList = linkElement.nextElementSibling;
+        arrowImg = linkElement.firstElementChild;
+      } else {
+        linkElement = e.target;
+        nestedList = e.target.nextElementSibling;
+        arrowImg = e.target.firstElementChild;
+      }
+
+      linkElement.classList.toggle("selected-menu-option");
+      nestedList.classList.toggle("show-nested-menu");
+      arrowImg.classList.toggle("rotate-arrow");
+      return;
+    }
+    
+    mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
+    mainElement.innerHTML = "";
+    console.log(e.target.id);
+    if (e.target.id === "about-proyect-link") {
+      mainElement.innerHTML = aboutProyectCode;
+    } else if (e.target.id === "descriptive-statistics-link") {
+      mainElement.innerHTML = descriptiveStatisticsCode;
+    }
+  });
+});
+
+
+// Setting margin top to hero video wrap
 heroVideoWrap.setAttribute("style", `margin-top:${header.offsetHeight}px`);
 
 // Adding new text to main content dynamicaly
@@ -467,32 +512,6 @@ navlProjectLinks.forEach(link => {
     // console.log(e.y - (header.offsetHeight + 10));
     // console.log(e);
   })
-});
-
-navLinksDeploy.forEach(link => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (windowWidth < 1024) {
-      const linkElement = e.target;
-      const nestedList = e.target.nextElementSibling;
-      const arrowImg = e.target.firstElementChild;
-
-      linkElement.setAttribute("style", "padding: 0.2rem; background-color: #9fb9c6; color: #0f2340;");
-      nestedList.setAttribute("style", "position: relative; clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);");
-      arrowImg.setAttribute("style", "transform: rotate(0deg);");
-      
-      return;
-    }
-    
-    mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
-    mainElement.innerHTML = "";
-    console.log(e.target.id);
-    if (e.target.id === "about-proyect-link") {
-      mainElement.innerHTML = aboutProyectCode;
-    } else if (e.target.id === "descriptive-statistics-link") {
-      mainElement.innerHTML = descriptiveStatisticsCode;
-    }
-  });
 });
 
 navlDSLinks.forEach(link => {
