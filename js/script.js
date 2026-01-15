@@ -2,6 +2,7 @@ const body = document.querySelector("body");
 const homeLink = document.querySelector("#home-link");
 const aboutProyectLink = document.querySelector("#about-proyect-link");
 const descriptiveStatisticsLink = document.querySelector("#descriptive-statistics-link");
+const inferentialStatisticsLink = document.querySelector("#inferential-statistics-link")
 const aboutUsLink = document.querySelector("#about-us-link");
 const underConstructionLinks = document.querySelectorAll(".under-construction");
 const mainElement = document.querySelector("main");
@@ -113,6 +114,12 @@ navLinksDropDown.forEach(link => {
 // Setting margin top to hero video wrap
 heroVideoWrap.setAttribute("style", `margin-top:${header.offsetHeight}px`);
 
+
+
+
+/* ----------------------------
+   HOME
+---------------------------- */
 // Adding new text to main content dynamicaly
 const homeCode = `
   <section id="inicio" class="hero-video-wrap section-anchor" role="region" aria-label="Portada con video">
@@ -160,6 +167,18 @@ const homeCode = `
   </section>
 `;
 
+homeLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainElement.innerHTML = "";
+  mainElement.innerHTML = homeCode;
+});
+
+
+
+
+/* ----------------------------
+   ABOUT PROJECT
+---------------------------- */
 // About project
 const aboutProyectCode = `
   <h1 class="title-1">INTRODUCCIÓN</h1>
@@ -167,7 +186,7 @@ const aboutProyectCode = `
   <section class="problem section-box" id="problem">
     <h2 class="title-2">PLANTEAMIENTO DEL PROBLEMA</h2>
     <p class="problem-desc">El análisis de las plantas solares a nivel mundial es importante porque permite medir su eficiencia real y entender qué factores afectan su producción de energía. Al estudiar estos datos, se pueden identificar las mejores condiciones para aprovechar el sol y reducir los fallos en la generación eléctrica.</p>
-    <p class="problem-desc">La información utilizada para este estudio fue obtenida de las plataformas Kaggle, NASA Power Data, Global Solar Atlas y Global Wind Atlas, cumpliendo con los criterios establecidos para el proyecto.</p>
+    <p class="problem-desc">El dataset utilizado para este proyecto se puede obtener desde el <a href="https://github.com/cimejia/solarPV/" target="_blank" class="bold-text" >repositorio del proyecto</a>. Este dataset es el resultado de la colaboración entre nuestro equipo de trabajo y el Departamento de Tecnología de Computación de la Universidad de Alicante, España, a partir de la información obtenida de las plataformas Kaggle, NASA Power Data, Global Solar Atlas, Global Wind Atlas y Copernicus cumpliendo con los criterios establecidos para el proyecto.</p>
   </section>
 
   <section class="map-container section-box" id="map">
@@ -188,6 +207,20 @@ const aboutProyectCode = `
   </section>
 `;
 
+navlProjectLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
+    mainElement.innerHTML = "";
+    mainElement.innerHTML = aboutProyectCode;
+  })
+});
+
+
+
+
+/* ----------------------------
+DESCRIPTIVE STATISTICS
+---------------------------- */
 // Descriptive Statistics parts
 const dSMethodology = `
   <section class="section-box ds-methodology-section" id="ds-methodology">
@@ -210,9 +243,9 @@ const dSMethodology = `
       <article class="sample">
         <h3 class="title-3">MUESTRA</h3>
         <h4 class="title-4">Textual:</h4>
-        <p>Un subconjunto representativo de plantas solares a nivel mundial que abarca todos los estados de desarrollo.</p>
+        <p>Un subconjunto representativo de plantas solares a nivel mundial que abarca las plantas solares registradas en la base de datos de Global Energy Monitor.</p>
         <h4 class="title-4">Simbólico:</h4>
-        <p>M={ x | x ∈ Plantas solares ∧ Ubicación(x) ∈ "Mundo" }</p>
+        <p>M={ x | x ∈ Plantas solares ∧ Ubicación(x) ∈ "Mundo" ∧ Entidad(x) ∈ "Global Energy Monitor" }</p>
       </article>
       <article class="study-case">
         <h3 class="title-3">CASO DE ESTUDIO</h3>
@@ -277,12 +310,26 @@ const dSVariablesCualitatives = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1377292" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1387716" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/solar-aptitude-type.webp" alt="Imagen representativa de la varible Aptitud solar" class="ds-vcualit-img">
         <figcaption>Tipo de Aptitud Solar</figcaption>
       </figure>
     </a>
+    
+    <a href="https://rpubs.com/mssarmiento/1387714" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/size.webp" alt="Imagen representativa de la varible Tamaño" class="ds-vcualit-img">
+        <figcaption>Tamaño</figcaption>
+      </figure>
+    </a>
+    
+    <span>
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/predominant-wind-direction.webp" alt="Imagen representativa de la varible Dirección del viento predominante" class="ds-vcualit-img">
+        <figcaption>Dirección del viento predominante</figcaption>
+      </figure>
+    </span>
 
   </div>
 </article>
@@ -294,7 +341,7 @@ const dSVariablesCuantitatives = `
 
   <h4 class="title-4">Discretas</h4>
   <div class="ds-vcuanti-discretes">
-    <a href="https://rpubs.com/mssarmiento/1382693" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1387717" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/sistema-solar-de-pv.webp" alt="Imagen representativa de la variable Aptitud Solar Redondeada" class="ds-vcuanti-img"/>
         <figcaption>Aptitud Solar Redondeada</figcaption>
@@ -389,7 +436,7 @@ const dSVariablesCuantitatives = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1382725" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1387719" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/temperatura.webp" alt="Imagen representativa de la variable Temperatura Ambiente" class="ds-vcuanti-img"/>
         <figcaption>Temperatura Ambiente</figcaption>
@@ -414,6 +461,13 @@ const dSVariablesCuantitatives = `
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/total-power.webp" alt="Imagen representativa de la variable Capacidad" class="ds-vcuanti-img"/>
         <figcaption>Capacidad</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/dist-to-road.webp" alt="Imagen representativa de la variable Distancia a la vía" class="ds-vcuanti-img"/>
+        <figcaption>Distancia a la vía</figcaption>
       </figure>
     </a>
   
@@ -462,6 +516,264 @@ const descriptiveStatisticsCode = `
   ${dSVariables}
 `;
 
+navlDSLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
+    mainElement.innerHTML = "";
+    mainElement.innerHTML = descriptiveStatisticsCode;
+  })
+});
+
+
+
+
+/* ----------------------------
+   INFERENTIAL STATISTICS
+---------------------------- */
+// Inferential Statistics parts
+const iSCualitativesVariables = `
+<article class="ds-vcualit-images">
+  <h3 class="title-3">Variables Cualitativas</h3>
+
+  <h4 class="title-4">Nominales</h4>
+  <div class="ds-vcualit-nominals">
+    <span>
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/plant-name.webp" alt="Imagen representativa de la variable Nombre de planta" class="ds-vcualit-img">
+        <figcaption>Nombre de la Planta</figcaption>
+      </figure>
+    </span>
+
+    <a href="https://rpubs.com/mssarmiento/1386648" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/country.webp" alt="Imagen representativa de la variable País." class="ds-vcualit-img"/>
+        <figcaption>País</figcaption>
+      </figure>
+    </a>
+
+    <a href="https://rpubs.com/mssarmiento/1386649" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/curvature-type.webp" alt="Imagen representativa de la variable Tipo de curvatura" class="ds-vcualit-img">
+        <figcaption>Tipo de Curvatura</figcaption>
+      </figure>
+    </a>
+
+  </div>
+
+  <h4 class="title-4">Ordinales</h4>
+  <div class="ds-vcualit-ordinals">
+    <a href="https://rpubs.com/mssarmiento/1386983" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/operational-status.webp" alt="Imagen representativa de la variable Estado operacional" class="ds-vcualit-img">
+        <figcaption>Estado Operacional</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/slope-type.webp" alt="Imagen representativa de la variable Tipo de pendiente" class="ds-vcualit-img">
+        <figcaption>Tipo de Pendiente</figcaption>
+      </figure>
+    </a>
+
+    <a href="https://rpubs.com/mssarmiento/1387461" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/aspect-type.webp" alt="Imagen representativa de la variable Tipo de aspecto" class="ds-vcualit-img">
+        <figcaption>Tipo de Aspecto</figcaption>
+      </figure>
+    </a>
+
+    <a href="https://rpubs.com/mssarmiento/1387731" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/solar-aptitude-type.webp" alt="Imagen representativa de la varible Aptitud solar" class="ds-vcualit-img">
+        <figcaption>Tipo de Aptitud Solar</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/size.webp" alt="Imagen representativa de la varible Tamaño" class="ds-vcualit-img">
+        <figcaption>Tamaño</figcaption>
+      </figure>
+    </a>
+    
+    <span>
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/predominant-wind-direction.webp" alt="Imagen representativa de la varible Dirección del viento predominante" class="ds-vcualit-img">
+        <figcaption>Dirección del viento predominante</figcaption>
+      </figure>
+    </span>
+
+  </div>
+</article>
+`;
+
+const iSCuantitativesVariables = `
+<article class="ds-vcuanti-images">
+  <h3 class="title-3">Variables Cuantitativas</h3>
+
+  <h4 class="title-4">Discretas</h4>
+  <div class="ds-vcuanti-discretes">
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/sistema-solar-de-pv.webp" alt="Imagen representativa de la variable Aptitud Solar Redondeada" class="ds-vcuanti-img"/>
+        <figcaption>Aptitud Solar Redondeada</figcaption>
+      </figure>
+    </a>
+  </div>
+  
+  <h4 class="title-4">Continuas</h4>
+  <div class="ds-vcuanti-continuos">
+  
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/latitud.webp" alt="Imagen representativa de la variable Latitud" class="ds-vcuanti-img"/>
+        <figcaption>Latitud</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/longitud.webp" alt="Imagen representativa de la variable Longitud" class="ds-vcuanti-img"/>
+        <figcaption>Longitud</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/elevation.webp" alt="Imagen representativa de la variable Elevación" class="ds-vcuanti-img"/>
+        <figcaption>Elevación</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/area.webp" alt="Imagen representativa de la variable Área" class="ds-vcuanti-img"/>
+        <figcaption>Área</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/slope.webp" alt="Imagen representativa de la variable Pendiente" class="ds-vcuanti-img"/>
+        <figcaption>Pendiente</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/curvature.webp" alt="Imagen representativa de la variable Curvatura" class="ds-vcuanti-img"/>
+        <figcaption>Curvatura</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/aspect.webp" alt="Imagen representativa de la variable Aspecto" class="ds-vcuanti-img"/>
+        <figcaption>Aspecto</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/ghi.webp" alt="Imagen representativa de la variable GHI" class="ds-vcuanti-img"/>
+        <figcaption>GHI</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/solar-aptitude.webp" alt="Imagen representativa de la variable Aptitud Solar" class="ds-vcuanti-img"/>
+        <figcaption>Aptitud Solar</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/humidity.webp" alt="Imagen representativa de la variable Humedad" class="ds-vcuanti-img"/>
+        <figcaption>Humedad</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/wind-speed.webp" alt="Imagen representativa de la variable Velocidad del Viento" class="ds-vcuanti-img"/>
+        <figcaption>Velocidad del Viento</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/wind-direction.webp" alt="Imagen representativa de la variable Dirección del Viento" class="ds-vcuanti-img"/>
+        <figcaption>Dirección del Viento</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/temperatura.webp" alt="Imagen representativa de la variable Temperatura Ambiente" class="ds-vcuanti-img"/>
+        <figcaption>Temperatura Ambiente</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/optimal-tilt.webp" alt="Imagen representativa de la variable Inclinación Óptima" class="ds-vcuanti-img"/>
+        <figcaption>Inclinación Óptima</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/max-power-hour.webp" alt="Imagen representativa de la variable Potencial Fotovoltaico" class="ds-vcuanti-img"/>
+        <figcaption>Potencial Fotovoltaico</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/total-power.webp" alt="Imagen representativa de la variable Capacidad" class="ds-vcuanti-img"/>
+        <figcaption>Capacidad</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" target="_blanket">
+      <figure>
+        <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/dist-to-road.webp" alt="Imagen representativa de la variable Distancia a la vía" class="ds-vcuanti-img"/>
+        <figcaption>Distancia a la vía</figcaption>
+      </figure>
+    </a>
+  
+  </div>
+
+</article>
+`;
+
+// Inferencial Statistics (IS) section
+const inferencialStatisticsCode = `
+  <h1 class="title-1">ESTADÍSTICA INFERENCIAL</h1>
+
+  <section class="section-box">
+    <h2 class="title-2">Variables</h2>
+    ${iSCualitativesVariables}
+    ${iSCuantitativesVariables}
+  </section>
+`;
+
+inferentialStatisticsLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
+  mainElement.innerHTML = "";
+  mainElement.innerHTML = inferencialStatisticsCode;
+});
+
+
+
+
+/* ----------------------------
+   ABOUT US
+---------------------------- */
+// About Us section
 const aboutUsHTML = `
 <h1 class="title-1">Sobre Nosotros</h1>
 <div class="section-box">
@@ -473,8 +785,8 @@ const aboutUsHTML = `
   <h2 class="title-2">Nuestro Equipo</h2>
   <p>A continuación tienes disponible los curriculum vitae de cada uno de los integrantes que conforman este grupo de trabajo.</p>
   <div class="cvs-container">
-    <a href="https://drive.google.com/file/d/1y4iccqOK6ZTA8z6du5rtk2dPVm5r94BA/view" class="cv-link" target="_blank">
-      Elías Macías
+    <a href="#" class="cv-link" >
+      Gualan Shelby
     </a>
     <a href="https://drive.google.com/file/d/11WPCxRfqv5hjF0s9hDhdZ_GaTpqCX-b5/view" class="cv-link" target="_blank">
       Juleydi Miles
@@ -492,42 +804,24 @@ const aboutUsHTML = `
 </section>
 `;
 
-const underConstructionCode = `
-  <h1 class="title-1">En construcción</h1>
-  <img src="assets/images/under-construction.png" alt="Escena de construcción" class="under-construction-img">
-`;
-
-
-homeLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  mainElement.innerHTML = "";
-  mainElement.innerHTML = homeCode;
-});
-
-navlProjectLinks.forEach(link => {
-  link.addEventListener("click", (e) => {
-    mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
-    mainElement.innerHTML = "";
-    mainElement.innerHTML = aboutProyectCode;
-    // console.log(e.y - (header.offsetHeight + 10));
-    // console.log(e);
-  })
-});
-
-navlDSLinks.forEach(link => {
-  link.addEventListener("click", (e) => {
-    mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
-    mainElement.innerHTML = "";
-    mainElement.innerHTML = descriptiveStatisticsCode;
-  })
-});
-
 aboutUsLink.addEventListener("click", (e) => {
   e.preventDefault();
   mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
   mainElement.innerHTML = "";
   mainElement.innerHTML = aboutUsHTML;
 });
+
+
+
+
+/* ----------------------------
+   UNDER CONSTRUCTION
+---------------------------- */
+// Under Construction image to show for building pages
+const underConstructionCode = `
+  <h1 class="title-1">En construcción</h1>
+  <img src="assets/images/under-construction.png" alt="Escena de construcción" class="under-construction-img">
+`;
 
 underConstructionLinks.forEach(link => (
   link.addEventListener("click", (e) => {
@@ -538,9 +832,12 @@ underConstructionLinks.forEach(link => (
   })
 ));
 
+
+
+
 /* --------------------------------
- LÓGICA DEL CHATBOT
- -------------------------------- */
+   LÓGICA DEL CHATBOT
+-------------------------------- */
 (function () {
     const chatbotBtn = document.getElementById('chatbotBtn');
     const chatbotModal = document.getElementById('chatbotModal');
