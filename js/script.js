@@ -190,8 +190,12 @@ const aboutProyectCode = `
   </section>
 
   <section class="map-container section-box" id="map">
-    <h2 class="title-2">Mapa de Ubicación Geográfica</h2>
-    <div class="map-container" style="width: 100%; height: 500px;">
+    <h2 class="title-2">MAPA DE UBICACIÓN GEOGRÁFICA</h2>
+    <iframe src="https://drive.google.com/file/d/1GBVQRhBoctEpF-59a6TJw813tEui_zHr/preview" class="map-iframe" width="640"></iframe>
+  </section>
+  
+  <section class="section-box">
+    <div style="width: 100%; height: 500px;">
       <iframe 
         src="https://mssarmientoo.github.io/figempa/map/index.html" 
         width="100%" 
@@ -232,7 +236,7 @@ DESCRIPTIVE STATISTICS
 // Descriptive Statistics parts
 const dSMethodology = `
   <section class="section-box ds-methodology-section" id="ds-methodology">
-    <h2 class="title-2">Metodología</h2>
+    <h2 class="title-2">METODOLOGÍA</h2>
     <div class="met-container">
       <article class="population">
         <h3 class="title-3">POBLACIÓN</h3>
@@ -260,7 +264,7 @@ const dSMethodology = `
         <h4 class="title-4">Textual:</h4>
         <p>Cada planta solar registrada, independientemente de su estado operativo actual.</p>
         <h4 class="title-4">Simbólico:</h4>
-        <p>X<sub>i</sub> donde i = 1, 2, 3, 4, ..., N</p>
+        <p>X<sub>i</sub> donde i = 1, 2, 3, 4, ..., 58978</p>
       </article>
     </div>
   </section>
@@ -510,7 +514,7 @@ const dSVariables = `
   </div>
 </section>
 <section class="section-box ds-variables-section" id="ds-variables">
-  <h2 class="title-2">Variables</h2>
+  <h2 class="title-2">VARIABLES</h2>
   ${dSVariablesCualitatives}
   ${dSVariablesCuantitatives}
 </section>
@@ -762,7 +766,7 @@ const inferencialStatisticsCode = `
   <h1 class="title-1">ESTADÍSTICA INFERENCIAL</h1>
 
   <section class="section-box">
-    <h2 class="title-2">Variables</h2>
+    <h2 class="title-2">VARIABLES</h2>
     ${iSCualitativesVariables}
     ${iSCuantitativesVariables}
   </section>
