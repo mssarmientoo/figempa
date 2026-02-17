@@ -51,13 +51,13 @@ menuBtn.addEventListener("click", () => {
 
 navLinks.forEach(link => (
   link.addEventListener("click", (e) => {
-    
+
     if (windowWidth < 1024) {
       const idLink = e.target.id;
       const classElements = [...e.target.classList];
       if (idLink === "descriptive-statistics-link"
-          || idLink === "about-proyect-link"
-          || classElements.includes('navitem-arrow')) {
+        || idLink === "about-proyect-link"
+        || classElements.includes('navitem-arrow')) {
         return
       }
     }
@@ -66,7 +66,7 @@ navLinks.forEach(link => (
     if (targetLink.includes('navlink-inside')) {
       resetDropDownMenu();
     }
-    
+
     resetDropDownMenu();
     toggleHamburguerMenuClases();
   })
@@ -75,7 +75,7 @@ navLinks.forEach(link => (
 navLinksDropDown.forEach(link => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    
+
     if (windowWidth < 1024) {
 
       const classElements = [...e.target.classList];
@@ -98,7 +98,7 @@ navLinksDropDown.forEach(link => {
       arrowImg.classList.toggle("rotate-arrow");
       return;
     }
-    
+
     mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
     mainElement.innerHTML = "";
     console.log(e.target.id);
@@ -191,7 +191,15 @@ const aboutProyectCode = `
 
   <section class="map-container section-box" id="map">
     <h2 class="title-2">Mapa de Ubicación Geográfica</h2>
-    <iframe src="https://drive.google.com/file/d/1GBVQRhBoctEpF-59a6TJw813tEui_zHr/preview" class="map-iframe" width="640"></iframe>
+    <div class="map-container" style="width: 100%; height: 500px;">
+      <iframe 
+        src="/map/index.html" 
+        width="100%" 
+        height="100%" 
+        style="border:none;" 
+        title="Mapa Interactivo Solar">
+      </iframe>
+    </div>
   </section>
 
   <section class="objectives section-box" id="objectives">
@@ -839,62 +847,62 @@ underConstructionLinks.forEach(link => (
    LÓGICA DEL CHATBOT
 -------------------------------- */
 (function () {
-    const chatbotBtn = document.getElementById('chatbotBtn');
-    const chatbotModal = document.getElementById('chatbotModal');
-    const closeChatbotBtn = document.getElementById('closeChatbot');
-    const chatbox = document.getElementById('chatbox');
-    const chatInput = document.getElementById('chatInput');
-    const sendChatBtn = document.getElementById('sendChatBtn');
+  const chatbotBtn = document.getElementById('chatbotBtn');
+  const chatbotModal = document.getElementById('chatbotModal');
+  const closeChatbotBtn = document.getElementById('closeChatbot');
+  const chatbox = document.getElementById('chatbox');
+  const chatInput = document.getElementById('chatInput');
+  const sendChatBtn = document.getElementById('sendChatBtn');
 
-    chatbotBtn.addEventListener('click', function () {
-        chatbotModal.style.display = (chatbotModal.style.display === 'none' || chatbotModal.style.display === '') ? 'block' : 'none';
-    });
+  chatbotBtn.addEventListener('click', function () {
+    chatbotModal.style.display = (chatbotModal.style.display === 'none' || chatbotModal.style.display === '') ? 'block' : 'none';
+  });
 
-    closeChatbotBtn.addEventListener('click', function () {
-        chatbotModal.style.display = 'none';
-    });
+  closeChatbotBtn.addEventListener('click', function () {
+    chatbotModal.style.display = 'none';
+  });
 
-    // --- INICIO DE CORRECCIÓN ---
-    // Función para normalizar texto (quitar acentos y minúsculas)
-    function normalizeText(text) {
-        return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    }
+  // --- INICIO DE CORRECCIÓN ---
+  // Función para normalizar texto (quitar acentos y minúsculas)
+  function normalizeText(text) {
+    return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
 
-    function sendMessage() {
-        const message = chatInput.value.trim();
-        if (message) {
-            // Muestra el mensaje del usuario
-            chatbox.innerHTML += `<p class="user-message">Tú: ${message}</p>`;
-            const normalizedMessage = normalizeText(message); // Normaliza el mensaje
-            chatInput.value = ''; // Limpia el input
+  function sendMessage() {
+    const message = chatInput.value.trim();
+    if (message) {
+      // Muestra el mensaje del usuario
+      chatbox.innerHTML += `<p class="user-message">Tú: ${message}</p>`;
+      const normalizedMessage = normalizeText(message); // Normaliza el mensaje
+      chatInput.value = ''; // Limpia el input
 
-            // Simula una respuesta del bot
-            setTimeout(() => {
-                let botResponse = "Lo siento, no entiendo tu pregunta en este momento. Intenta preguntarme sobre 'variables', 'metodologia' o 'equipo'.";
+      // Simula una respuesta del bot
+      setTimeout(() => {
+        let botResponse = "Lo siento, no entiendo tu pregunta en este momento. Intenta preguntarme sobre 'variables', 'metodologia' o 'equipo'.";
 
-                // Compara el mensaje normalizado
-                if (normalizedMessage.includes("variable")) {
-                    botResponse = "Las variables principales incluyen potencia instalada (MW), factor de planta (%), irradiancia y tipo de panel.";
-                } else if (normalizedMessage.includes("metodologia")) {
-                    botResponse = "La metodología implica recolección de datos de fuentes oficiales, depuración con Python/Pandas y estandarización.";
-                } else if (normalizedMessage.includes("regresion")) {
-                    botResponse = "Utilizamos modelos lineales y no lineales para estimar la producción y técnicas como cross-validation para validación.";
-                } else if (normalizedMessage.includes("equipo") || normalizedMessage.includes("nombres")) {
-                    botResponse = "El equipo está conformado por Sarmiento Martín, Miles Juleidy, Neira Fernando, Ramírez Carlos y Masías Elías.";
-                }
-
-                chatbox.innerHTML += `<p class="bot-message">Asistente Solar: ${botResponse}</p>`;
-                chatbox.scrollTop = chatbox.scrollHeight; // Scroll al final
-            }, 1000); // Retraso de 1 segundo para la respuesta
+        // Compara el mensaje normalizado
+        if (normalizedMessage.includes("variable")) {
+          botResponse = "Las variables principales incluyen potencia instalada (MW), factor de planta (%), irradiancia y tipo de panel.";
+        } else if (normalizedMessage.includes("metodologia")) {
+          botResponse = "La metodología implica recolección de datos de fuentes oficiales, depuración con Python/Pandas y estandarización.";
+        } else if (normalizedMessage.includes("regresion")) {
+          botResponse = "Utilizamos modelos lineales y no lineales para estimar la producción y técnicas como cross-validation para validación.";
+        } else if (normalizedMessage.includes("equipo") || normalizedMessage.includes("nombres")) {
+          botResponse = "El equipo está conformado por Sarmiento Martín, Miles Juleidy, Neira Fernando, Ramírez Carlos y Masías Elías.";
         }
+
+        chatbox.innerHTML += `<p class="bot-message">Asistente Solar: ${botResponse}</p>`;
+        chatbox.scrollTop = chatbox.scrollHeight; // Scroll al final
+      }, 1000); // Retraso de 1 segundo para la respuesta
     }
-    // --- FIN DE CORRECCIÓN ---
+  }
+  // --- FIN DE CORRECCIÓN ---
 
-    sendChatBtn.addEventListener('click', sendMessage);
+  sendChatBtn.addEventListener('click', sendMessage);
 
-    chatInput.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            sendMessage();
-        }
-    });
+  chatInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  });
 })();
