@@ -193,7 +193,7 @@ const aboutProyectCode = `
     <h2 class="title-2">Mapa de Ubicación Geográfica</h2>
     <div class="map-container" style="width: 100%; height: 500px;">
       <iframe 
-        src="/map/index.html" 
+        src="https://mssarmientoo.github.io/figempa/map/index.html" 
         width="100%" 
         height="100%" 
         style="border:none;" 
