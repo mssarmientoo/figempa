@@ -231,6 +231,31 @@ const aboutProyectCode = `
         <li class="objectives-items">Deducir relaciones entre variables de las plantas solares a nivel mundial con el fin de realizar estimaciones.</li>
     </ol>
   </section>
+
+  <section class="section-box" id="about-us">
+    <h2 class="title-2">SOBRE NOSOTROS</h2>
+    <p class="about-us-description">Somos estudiantes de segundo semestre de la Universidad Central del Ecuador, pertenecientes a la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental (FIGEMPA), en la carrera de Ingeniería en Petróleos. En el marco de la asignatura de Estadística, presentamos este proyecto con el objetivo de ofrecer información clara, pertinente y accesible para quienes se interesan en esta área del conocimiento.</p>
+    <p class="about-us-description">Como futuros profesionales, aspiramos a formarnos como ingenieros comprometidos, preparados y apasionados, capaces de contribuir al desarrollo de una industria que avanza de manera constante gracias a la innovación tecnológica y al estudio científico de las energias sostenibles.</p>
+    <p class="about-us-description">Confiamos en el valor del aprendizaje conjunto y en la importancia de compartir saberes. Por ello, este trabajo no solo constituye un componente de nuestra formación académica, sino también un aporte para fomentar una comprensión más sólida de un campo tan dinámico y relevante en el contexto actual.</p>
+    <h3 class="title-3 about-us-title-3">Nuestro Grupo de Trabajo</h3>
+    <div class="cvs-container">
+      <a href="#" class="cv-link" >
+        Gualan Shelby
+      </a>
+      <a href="https://drive.google.com/file/d/11WPCxRfqv5hjF0s9hDhdZ_GaTpqCX-b5/view" class="cv-link" target="_blank">
+        Juleydi Miles
+      </a>
+      <a href="https://drive.google.com/file/d/1aJVdtwGPSzCrZ5pc1UhYQBmNGCTNFphF/view" class="cv-link" target="_blank">
+        Fernando Neira
+      </a>
+      <a href="https://drive.google.com/file/d/1tNijknCiQ28rFS-BwimOE6KYhisE6F6m/view" class="cv-link" target="_blank">
+        Carlos Ramírez
+      </a>
+      <a href="https://drive.google.com/file/d/1xlbUEJBGBklpkwEaIfvgxBt-8x-isuBu/view" class="cv-link" target="_blank">
+        Martín Sarmiento
+      </a>
+    </div>
+  </section>
 `;
 
 navlProjectLinks.forEach(link => {
@@ -791,50 +816,6 @@ inferentialStatisticsLink.addEventListener("click", (e) => {
   mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
   mainElement.innerHTML = "";
   mainElement.innerHTML = inferencialStatisticsCode;
-});
-
-
-
-
-/* ----------------------------
-   ABOUT US
----------------------------- */
-// About Us section
-const aboutUsHTML = `
-<h1 class="title-1">Sobre Nosotros</h1>
-<div class="section-box">
-  <p class="about-us-description">Somos estudiantes de segundo semestre de la Universidad Central del Ecuador, pertenecientes a la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental (FIGEMPA), en la carrera de Ingeniería en Petróleos. En el marco de la asignatura de Estadística, presentamos este proyecto con el objetivo de ofrecer información clara, pertinente y accesible para quienes se interesan en esta área del conocimiento.</p>
-  <p class="about-us-description">Como futuros profesionales, aspiramos a formarnos como ingenieros comprometidos, preparados y apasionados, capaces de contribuir al desarrollo de una industria que avanza de manera constante gracias a la innovación tecnológica y al estudio científico de las energias sostenibles.</p>
-  <p class="about-us-description">Confiamos en el valor del aprendizaje conjunto y en la importancia de compartir saberes. Por ello, este trabajo no solo constituye un componente de nuestra formación académica, sino también un aporte para fomentar una comprensión más sólida de un campo tan dinámico y relevante en el contexto actual.</p>
-</div>
-<section class="section-box">
-  <h2 class="title-2">Nuestro Equipo</h2>
-  <p>A continuación tienes disponible los curriculum vitae de cada uno de los integrantes que conforman este grupo de trabajo.</p>
-  <div class="cvs-container">
-    <a href="#" class="cv-link" >
-      Gualan Shelby
-    </a>
-    <a href="https://drive.google.com/file/d/11WPCxRfqv5hjF0s9hDhdZ_GaTpqCX-b5/view" class="cv-link" target="_blank">
-      Juleydi Miles
-    </a>
-    <a href="https://drive.google.com/file/d/1aJVdtwGPSzCrZ5pc1UhYQBmNGCTNFphF/view" class="cv-link" target="_blank">
-      Fernando Neira
-    </a>
-    <a href="https://drive.google.com/file/d/1tNijknCiQ28rFS-BwimOE6KYhisE6F6m/view" class="cv-link" target="_blank">
-      Carlos Ramírez
-    </a>
-    <a href="https://drive.google.com/file/d/1xlbUEJBGBklpkwEaIfvgxBt-8x-isuBu/view" class="cv-link" target="_blank">
-      Martín Sarmiento
-    </a>
-  </div>
-</section>
-`;
-
-aboutUsLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
-  mainElement.innerHTML = "";
-  mainElement.innerHTML = aboutUsHTML;
 });
 
 
