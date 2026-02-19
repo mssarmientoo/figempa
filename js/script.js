@@ -1,5 +1,6 @@
 const body = document.querySelector("body");
 const homeLink = document.querySelector("#home-link");
+const interactiveMapLink = document.querySelector("#interactive-map-link");
 const aboutProyectLink = document.querySelector("#about-proyect-link");
 const descriptiveStatisticsLink = document.querySelector("#descriptive-statistics-link");
 const inferentialStatisticsLink = document.querySelector("#inferential-statistics-link")
@@ -177,6 +178,31 @@ homeLink.addEventListener("click", (e) => {
 
 
 /* ----------------------------
+    INTERACTIVE MAP
+---------------------------- */
+const interactiveMapCode = `
+  <h1 class="title-1" style='margin-top:${header.offsetHeight}px' >MAPA INTERACTIVO</h1>
+
+  <div style="width: 100%; height: 500px;">
+    <iframe 
+      src="https://mssarmientoo.github.io/figempa/map/index.html" 
+      width="100%" 
+      height="100%" 
+      style="border:none;" 
+      title="Mapa Interactivo Solar">
+    </iframe>
+  </div>
+`;
+
+interactiveMapLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainElement.innerHTML = "";
+  mainElement.innerHTML = interactiveMapCode;
+});
+
+
+
+/* ----------------------------
    ABOUT PROJECT
 ---------------------------- */
 // About project
@@ -192,18 +218,6 @@ const aboutProyectCode = `
   <section class="map-container section-box" id="map">
     <h2 class="title-2">MAPA DE UBICACIÓN GEOGRÁFICA</h2>
     <iframe src="https://drive.google.com/file/d/1GBVQRhBoctEpF-59a6TJw813tEui_zHr/preview" class="map-iframe" width="640"></iframe>
-  </section>
-  
-  <section class="section-box">
-    <div style="width: 100%; height: 500px;">
-      <iframe 
-        src="https://mssarmientoo.github.io/figempa/map/index.html" 
-        width="100%" 
-        height="100%" 
-        style="border:none;" 
-        title="Mapa Interactivo Solar">
-      </iframe>
-    </div>
   </section>
 
   <section class="objectives section-box" id="objectives">
