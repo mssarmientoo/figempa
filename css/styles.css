@@ -594,6 +594,12 @@ p {
   text-align: center;
 }
 
+.ml-methodology-img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 .ml-models-links-container {
   display: flex;
   flex-wrap: wrap;
