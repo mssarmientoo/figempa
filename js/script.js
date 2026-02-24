@@ -6,6 +6,7 @@ const descriptiveStatisticsLink = document.querySelector("#descriptive-statistic
 const inferentialStatisticsLink = document.querySelector("#inferential-statistics-link");
 const regressionModelsLink = document.querySelector('#regression-models-link');
 const machineLearningLink = document.querySelector('#machine-learning-link');
+const toolsLink = document.querySelector('#tools-link');
 const aboutUsLink = document.querySelector("#about-us-link");
 const underConstructionLinks = document.querySelectorAll(".under-construction");
 const mainElement = document.querySelector("main");
@@ -241,20 +242,20 @@ const aboutProyectCode = `
     <p class="about-us-description">Confiamos en el valor del aprendizaje conjunto y en la importancia de compartir saberes. Por ello, este trabajo no solo constituye un componente de nuestra formación académica, sino también un aporte para fomentar una comprensión más sólida de un campo tan dinámico y relevante en el contexto actual.</p>
     <h3 class="title-3 about-us-title-3">Nuestro Grupo de Trabajo</h3>
     <div class="cvs-container">
-      <a href="https://drive.google.com/file/d/1R3lUrsZgvpMBEEy31lrqK0p4FxZZNQTE/view" class="cv-link" target="_blank">
-        Gualan Shelby
+      <a href="https://drive.google.com/file/d/1R3lUrsZgvpMBEEy31lrqK0p4FxZZNQTE/view" class="regression-rs-link" target="_blank">
+        <span class="regression-link-title">Gualan Shelby</span>
       </a>
-      <a href="https://drive.google.com/file/d/1eyJ8lzU8gzxTOuF8DdlKOnAWnbi5nUDv/view" class="cv-link" target="_blank">
-        Juleydi Miles
+      <a href="https://drive.google.com/file/d/1eyJ8lzU8gzxTOuF8DdlKOnAWnbi5nUDv/view" class="regression-rs-link" target="_blank">
+        <span class="regression-link-title">Juleydi Miles</span>
       </a>
-      <a href="https://drive.google.com/file/d/1jwGEu2l3I8LQNb7KCrAycLZLvr2zNent/view" class="cv-link" target="_blank">
-        Fernando Neira
+      <a href="https://drive.google.com/file/d/1jwGEu2l3I8LQNb7KCrAycLZLvr2zNent/view" class="regression-rs-link" target="_blank">
+        <span class="regression-link-title">Fernando Neira</span>
       </a>
-      <a href="https://drive.google.com/file/d/10gKZVoes30IPzWsDmMNpamIt_0wHh6xv/view" class="cv-link" target="_blank">
-        Carlos Ramírez
+      <a href="https://drive.google.com/file/d/10gKZVoes30IPzWsDmMNpamIt_0wHh6xv/view" class="regression-rs-link" target="_blank">
+        <span class="regression-link-title">Carlos Ramírez</span>
       </a>
-      <a href="https://drive.google.com/file/d/1n2qUJGUfGpwbh1u6eyi27vV_v3Af84yh/view" class="cv-link" target="_blank">
-        Martín Sarmiento
+      <a href="https://drive.google.com/file/d/1n2qUJGUfGpwbh1u6eyi27vV_v3Af84yh/view" class="regression-rs-link" target="_blank">
+        <span class="regression-link-title">Martín Sarmiento</span>
       </a>
     </div>
   </section>
@@ -938,16 +939,16 @@ const machineLearningCode = `
       <a
       href="https://colab.research.google.com/drive/1i2e8NXF8GatmiUpj8On3K3YHhbxqvRVL?usp=sharing"
       target="_blank"
-      class="ml-models-link"
+      class="regression-rs-link"
       >
-        Notebook de Regresión
+        <span class="regression-link-title">Notebook de Regresión</span>
       </a>
       <a
       href="https://colab.research.google.com/drive/1gzbUOA5vg8L-wBAeNDkolFC7Mk4O0Xdg?usp=sharing"
       target="_blank"
-      class="ml-models-link"
+      class="regression-rs-link"
       >
-        Notebook de Clasificación
+        <span class="regression-link-title">Notebook de Clasificación</span>
       </a>
     </div>
   </section>
@@ -966,6 +967,29 @@ machineLearningLink.addEventListener("click", (e) => {
   mainElement.innerHTML = "";
   mainElement.innerHTML = machineLearningCode;
 });
+
+
+
+
+/* ----------------------------
+   MACHINE LEARNING
+---------------------------- */
+const toolsCode = `
+  <h1 class="title-1">HERRAMIENTAS</h1>
+  <section class="section-box">
+    <h2 class="title-2">HERRAMIENTAS UTILIZADAS</h2>
+    <p class="tools-description">
+      Para el desarrollo de nuestro proyecto, empleamos un ecosistema tecnológico avanzado que integra plataformas de análisis y desarrollo como Posit Cloud, RStudio, Google Colab, VS Code y LaTeX, junto con lenguajes clave como HTML5, CSS y JavaScript. Complementamos este flujo de trabajo accediendo a datos científicos de Kaggle, NASA, Copernicus, OpenTopography y el servicio de cambio climático de ECMWF, mientras que para el análisis geoespacial y la identificación de derrames utilizamos QGIS, ArcGIS y Google Earth. Finalmente, aseguramos la productividad y difusión de resultados mediante herramientas colaborativas como GitHub, Google Drive, RPubs, Microsoft Teams y la suite de Office, impulsando así un enfoque moderno, eficiente y de alta precisión.
+    </p>
+  </section>
+`;
+
+toolsLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
+  mainElement.innerHTML = "";
+  mainElement.innerHTML = toolsCode;
+})
 
 
 
