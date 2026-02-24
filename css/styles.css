@@ -573,6 +573,44 @@ p {
   transition-delay: 0.4s;
 }
 
+/* Machine Learning */
+.ml-introduction-text {
+  max-width: var(--maxwidth);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+.ml-title-3 {
+  text-align: center;
+}
+
+.ml-instructions {
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.ml-models-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ml-models-link {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #01008A;
+}
+
 /* About Us */
 .about-us-description {
   text-align: center;

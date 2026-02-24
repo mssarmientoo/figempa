@@ -5,6 +5,7 @@ const aboutProyectLink = document.querySelector("#about-proyect-link");
 const descriptiveStatisticsLink = document.querySelector("#descriptive-statistics-link");
 const inferentialStatisticsLink = document.querySelector("#inferential-statistics-link");
 const regressionModelsLink = document.querySelector('#regression-models-link');
+const machineLearningLink = document.querySelector('#machine-learning-link');
 const aboutUsLink = document.querySelector("#about-us-link");
 const underConstructionLinks = document.querySelectorAll(".under-construction");
 const mainElement = document.querySelector("main");
@@ -240,19 +241,19 @@ const aboutProyectCode = `
     <p class="about-us-description">Confiamos en el valor del aprendizaje conjunto y en la importancia de compartir saberes. Por ello, este trabajo no solo constituye un componente de nuestra formación académica, sino también un aporte para fomentar una comprensión más sólida de un campo tan dinámico y relevante en el contexto actual.</p>
     <h3 class="title-3 about-us-title-3">Nuestro Grupo de Trabajo</h3>
     <div class="cvs-container">
-      <a href="#" class="cv-link" >
+      <a href="https://drive.google.com/file/d/1R3lUrsZgvpMBEEy31lrqK0p4FxZZNQTE/view" class="cv-link" target="_blank">
         Gualan Shelby
       </a>
-      <a href="https://drive.google.com/file/d/11WPCxRfqv5hjF0s9hDhdZ_GaTpqCX-b5/view" class="cv-link" target="_blank">
+      <a href="https://drive.google.com/file/d/1eyJ8lzU8gzxTOuF8DdlKOnAWnbi5nUDv/view" class="cv-link" target="_blank">
         Juleydi Miles
       </a>
-      <a href="https://drive.google.com/file/d/1aJVdtwGPSzCrZ5pc1UhYQBmNGCTNFphF/view" class="cv-link" target="_blank">
+      <a href="https://drive.google.com/file/d/1jwGEu2l3I8LQNb7KCrAycLZLvr2zNent/view" class="cv-link" target="_blank">
         Fernando Neira
       </a>
-      <a href="https://drive.google.com/file/d/1tNijknCiQ28rFS-BwimOE6KYhisE6F6m/view" class="cv-link" target="_blank">
+      <a href="https://drive.google.com/file/d/10gKZVoes30IPzWsDmMNpamIt_0wHh6xv/view" class="cv-link" target="_blank">
         Carlos Ramírez
       </a>
-      <a href="https://drive.google.com/file/d/1xlbUEJBGBklpkwEaIfvgxBt-8x-isuBu/view" class="cv-link" target="_blank">
+      <a href="https://drive.google.com/file/d/1n2qUJGUfGpwbh1u6eyi27vV_v3Af84yh/view" class="cv-link" target="_blank">
         Martín Sarmiento
       </a>
     </div>
@@ -418,28 +419,28 @@ const dSVariablesCuantitatives = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1377298" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1400948" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/elevation.webp" alt="Imagen representativa de la variable Elevación" class="ds-vcuanti-img"/>
         <figcaption>Elevación</figcaption>
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1377299" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1400950" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/area.webp" alt="Imagen representativa de la variable Área" class="ds-vcuanti-img"/>
         <figcaption>Área</figcaption>
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1377300" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1400963" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/slope.webp" alt="Imagen representativa de la variable Pendiente" class="ds-vcuanti-img"/>
         <figcaption>Pendiente</figcaption>
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1377301" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1400966" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/curvature.webp" alt="Imagen representativa de la variable Curvatura" class="ds-vcuanti-img"/>
         <figcaption>Curvatura</figcaption>
@@ -509,14 +510,14 @@ const dSVariablesCuantitatives = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1377312" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1401015" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/total-power.webp" alt="Imagen representativa de la variable Capacidad" class="ds-vcuanti-img"/>
         <figcaption>Capacidad</figcaption>
       </figure>
     </a>
     
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1401019" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/dist-to-road.webp" alt="Imagen representativa de la variable Distancia a la vía" class="ds-vcuanti-img"/>
         <figcaption>Distancia a la vía</figcaption>
@@ -596,14 +597,14 @@ const iSCualitativesVariables = `
       </figure>
     </span>
 
-    <a href="https://rpubs.com/mssarmiento/1386648" target="_blanket">
+    <a href="https://rpubs.com/Caliche/1401348" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/country.webp" alt="Imagen representativa de la variable País." class="ds-vcualit-img"/>
         <figcaption>País</figcaption>
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1386649" target="_blanket">
+    <a href="https://rpubs.com/Caliche/1401346" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/curvature-type.webp" alt="Imagen representativa de la variable Tipo de curvatura" class="ds-vcualit-img">
         <figcaption>Tipo de Curvatura</figcaption>
@@ -614,47 +615,47 @@ const iSCualitativesVariables = `
 
   <h4 class="title-4">Ordinales</h4>
   <div class="ds-vcualit-ordinals">
-    <a href="https://rpubs.com/mssarmiento/1386983" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1401060" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/operational-status.webp" alt="Imagen representativa de la variable Estado operacional" class="ds-vcualit-img">
         <figcaption>Estado Operacional</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1400190" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/slope-type.webp" alt="Imagen representativa de la variable Tipo de pendiente" class="ds-vcualit-img">
         <figcaption>Tipo de Pendiente</figcaption>
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1387461" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1400195" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/aspect-type.webp" alt="Imagen representativa de la variable Tipo de aspecto" class="ds-vcualit-img">
         <figcaption>Tipo de Aspecto</figcaption>
       </figure>
     </a>
 
-    <a href="https://rpubs.com/mssarmiento/1387731" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1400192" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/solar-aptitude-type.webp" alt="Imagen representativa de la varible Aptitud solar" class="ds-vcualit-img">
         <figcaption>Tipo de Aptitud Solar</figcaption>
       </figure>
     </a>
     
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1400193" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/size.webp" alt="Imagen representativa de la varible Tamaño" class="ds-vcualit-img">
         <figcaption>Tamaño</figcaption>
       </figure>
     </a>
     
-    <span>
+    <a href="https://rpubs.com/Caliche/1401458" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/predominant-wind-direction.webp" alt="Imagen representativa de la varible Dirección del viento predominante" class="ds-vcualit-img">
         <figcaption>Dirección del viento predominante</figcaption>
       </figure>
-    </span>
+    </a>
 
   </div>
 </article>
@@ -666,7 +667,7 @@ const iSCuantitativesVariables = `
 
   <h4 class="title-4">Discretas</h4>
   <div class="ds-vcuanti-discretes">
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1400189" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/sistema-solar-de-pv.webp" alt="Imagen representativa de la variable Aptitud Solar Redondeada" class="ds-vcuanti-img"/>
         <figcaption>Aptitud Solar Redondeada</figcaption>
@@ -677,119 +678,119 @@ const iSCuantitativesVariables = `
   <h4 class="title-4">Continuas</h4>
   <div class="ds-vcuanti-continuos">
   
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1401151" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/latitud.webp" alt="Imagen representativa de la variable Latitud" class="ds-vcuanti-img"/>
         <figcaption>Latitud</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/mssarmiento/1401164" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/longitud.webp" alt="Imagen representativa de la variable Longitud" class="ds-vcuanti-img"/>
         <figcaption>Longitud</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Caliche/1400348" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/elevation.webp" alt="Imagen representativa de la variable Elevación" class="ds-vcuanti-img"/>
         <figcaption>Elevación</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Caliche/1400351" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/area.webp" alt="Imagen representativa de la variable Área" class="ds-vcuanti-img"/>
         <figcaption>Área</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1400046" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/slope.webp" alt="Imagen representativa de la variable Pendiente" class="ds-vcuanti-img"/>
         <figcaption>Pendiente</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1400019" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/curvature.webp" alt="Imagen representativa de la variable Curvatura" class="ds-vcuanti-img"/>
         <figcaption>Curvatura</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Caliche/1401435" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/aspect.webp" alt="Imagen representativa de la variable Aspecto" class="ds-vcuanti-img"/>
         <figcaption>Aspecto</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Caliche/1401446" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/ghi.webp" alt="Imagen representativa de la variable GHI" class="ds-vcuanti-img"/>
         <figcaption>GHI</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1399723" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/solar-aptitude.webp" alt="Imagen representativa de la variable Aptitud Solar" class="ds-vcuanti-img"/>
         <figcaption>Aptitud Solar</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1399977" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/humidity.webp" alt="Imagen representativa de la variable Humedad" class="ds-vcuanti-img"/>
         <figcaption>Humedad</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Juleydi/1401405" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/wind-speed.webp" alt="Imagen representativa de la variable Velocidad del Viento" class="ds-vcuanti-img"/>
         <figcaption>Velocidad del Viento</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Fernando_Neira/1399887" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/wind-direction.webp" alt="Imagen representativa de la variable Dirección del Viento" class="ds-vcuanti-img"/>
         <figcaption>Dirección del Viento</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Caliche/1401449" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/temperatura.webp" alt="Imagen representativa de la variable Temperatura Ambiente" class="ds-vcuanti-img"/>
         <figcaption>Temperatura Ambiente</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Juleydi/1401404" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/optimal-tilt.webp" alt="Imagen representativa de la variable Inclinación Óptima" class="ds-vcuanti-img"/>
         <figcaption>Inclinación Óptima</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Juleydi/1401403" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/max-power-hour.webp" alt="Imagen representativa de la variable Potencial Fotovoltaico" class="ds-vcuanti-img"/>
         <figcaption>Potencial Fotovoltaico</figcaption>
       </figure>
     </a>
 
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Juleydi/1401407" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/total-power.webp" alt="Imagen representativa de la variable Capacidad" class="ds-vcuanti-img"/>
         <figcaption>Capacidad</figcaption>
       </figure>
     </a>
     
-    <a href="#" target="_blanket">
+    <a href="https://rpubs.com/Caliche/1400364" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/dist-to-road.webp" alt="Imagen representativa de la variable Distancia a la vía" class="ds-vcuanti-img"/>
         <figcaption>Distancia a la vía</figcaption>
@@ -854,7 +855,7 @@ const regressionModelsCode = `
         <span class="regression-link-title">Regresión Exponencial</span>
       </a>
       <a
-        href="#"
+        href="https://rpubs.com/mssarmiento/1400389"
         target="_blank"
         class="regression-rs-link"
       >
@@ -874,7 +875,7 @@ const regressionModelsCode = `
     <h2 class="title-2">REGRESIÓN MÚLTIPLE</h2>
     <div class="regression-rs-links-container">
       <a
-        href="#"
+        href="https://rpubs.com/mssarmiento/1400942"
         target="_blank"
         class="regression-rs-link"
       >
@@ -889,6 +890,81 @@ regressionModelsLink.addEventListener("click", (e) => {
   mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
   mainElement.innerHTML = "";
   mainElement.innerHTML = regressionModelsCode;
+});
+
+
+
+
+/* ----------------------------
+   MACHINE LEARNING
+---------------------------- */
+const machineLearningCode = `
+  <h1 class="title-1">MACHINE LEARNING</h1>
+  
+  <p class="ml-introduction-text">
+    Uso de Machine Learning para la Predicción de Potencial Fotovoltaico (MWh/año) y Clasificación de Aptitud Solar Global
+  </p>
+
+  <section class="section-box">
+    <h2 class="title-2">PLANTEAMIENTO DEL PROBLEMA</h2>
+    <p>
+      A nivel mundial, la expansión solar es clave para la transición energética; sin embargo, la variabilidad geográfica dificulta evaluar la viabilidad de nuevos proyectos. Ante este panorama, el análisis estadístico y el Machine Learning permiten procesar datos históricos geoespaciales para predecir variables críticas como la aptitud solar y el potencial fotovoltaico (MWh/año). El uso de estos modelos busca optimizar la planificación técnica, aplicando este análisis global en un caso de estudio local centrado en las facultades de FIGEMPA y Ciencias Químicas.
+    </p>
+  </section>
+  
+  <section class="section-box">
+    <h2 class="title-2">OBJETIVO</h2>
+    <p>
+      Desarrollar un modelo de Machine Learning basado en redes neuronales que permita clasificar el nivel de aptitud y predecir la generación energética a partir de datos climáticos y operativos, con el fin de proporcionar una herramienta de alta precisión para la toma de decisiones en proyectos renovables.
+    </p>
+  </section>
+  
+  <section class="section-box">
+    <h2 class="title-2">METODOLOGÍA</h2>
+    <img 
+      src="https://mssarmientoo.github.io/figempa/assets/images/ml-methodology.jpeg"
+      alt="Diagrama de la metodología de Machine Learning"
+      class="ml-methodology-img"
+    />
+  </section>
+  
+  <section class="section-box">
+    <h2 class="title-2">MODELO</h2>
+    <h3 class="title-3 ml-title-3">Explora en Google Colab</h3>
+    <p class="ml-instructions">
+      Haz clic en los siguientes bótones para acceder a los cuadernos interactivos.
+    </p>
+    <div class="ml-models-links-container">
+      <a
+      href="https://colab.research.google.com/drive/1i2e8NXF8GatmiUpj8On3K3YHhbxqvRVL?usp=sharing"
+      target="_blank"
+      class="ml-models-link"
+      >
+        Notebook de Regresión
+      </a>
+      <a
+      href="https://colab.research.google.com/drive/1gzbUOA5vg8L-wBAeNDkolFC7Mk4O0Xdg?usp=sharing"
+      target="_blank"
+      class="ml-models-link"
+      >
+        Notebook de Clasificación
+      </a>
+    </div>
+  </section>
+
+  <section class="section-box">
+    <h2 class="title-2">CONCLUSIÓN</h2>
+    <p>
+      Se ha logrado implementar un modelo de Machine Learning capaz de clasificar el nivel de aptitud y predecir el potencial fotovoltaico (MWh/año) a partir de variables geoespaciales y climáticas globales. Este enfoque no solo optimiza la precisión en la evaluación de recursos renovables para el caso de estudio de la FIGEMPA y la Facultad de Ciencias Químicas, sino que también posee una alta capacidad de escalabilidad para analizar la viabilidad energética en cualquier región del mundo mediante el ajuste del conjunto de datos de entrada.
+    </p>
+  </section>
+`;
+
+machineLearningLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
+  mainElement.innerHTML = "";
+  mainElement.innerHTML = machineLearningCode;
 });
 
 
