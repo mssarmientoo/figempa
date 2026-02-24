@@ -622,6 +622,29 @@ p {
   text-align: center;
 } */
 
+.tools-logo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+  gap: 2rem;
+}
+
+.tool-logo-bg {
+  /* width: 100%; */
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool-logo-img {
+  width: 80%;
+  min-width: 80px;
+  max-width: 120px;
+  transition: transform 0.3s;
+}
+
 /* About Us */
 .about-us-description {
   text-align: center;

@@ -984,11 +984,162 @@ const toolsCode = `
   </section>
 
   <section class="section-box">
-    <img
-      src="https://mssarmientoo.github.io/figempa/assets/images/tools/ArcGIS_globe.png"
-      alt="Collage de las herramientas utilizadas en el proyecto"
-      class="tools-img"
-    />
+    <div class="tools-logo-container">
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/ArcGIS_globe.png"
+          alt="ArcGIS Globe Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/climate change service.png"
+          alt="Climate Change Service Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/copernicus.png"
+          alt="Copernicus Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/ecmwf.png"
+          alt="ECMWF Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/GitHub.png"
+          alt="GitHub Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/HTML5.png"
+          alt="HTML5 Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/CSS.png"
+          alt="CSS Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/JavaScript-logo.png"
+          alt="JavaScript Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/Google_Colaboratory.png"
+          alt="Google Colab Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/Google_Drive.png"
+          alt="Google Drive Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/Google_Earth_Icon.png"
+          alt="Google Earth Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/Kaggle.png"
+          alt="Kaggle Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/LaTeX.png"
+          alt="LaTeX Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/Microsoft_Office_Logo_(2019).png"
+          alt="Microsoft Office Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/Microsoft_Office_Teams.png"
+          alt="Microsoft Office Teams Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/nasa-logo.png"
+          alt="NASA Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/opentopo_logo_text_transparent.png"
+          alt="OpenTopo Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/POSIT2.png"
+          alt="POSIT2 Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/Qgis.png"
+          alt="QGIS Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/rpubs.png"
+          alt="RPubs Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/Rstudio.png"
+          alt="RStudio Logo"
+          class="tool-logo-img"
+        />
+      </div>
+      <div class="tool-logo-bg">
+        <img
+          src="https://mssarmientoo.github.io/figempa/assets/images/tools/VS CODE.png"
+          alt="VS Code Logo"
+          class="tool-logo-img"
+        />
+      </div>
+    </div>
   </section>
 `;
 
