@@ -982,6 +982,14 @@ const toolsCode = `
       Para el desarrollo de nuestro proyecto, empleamos un ecosistema tecnológico avanzado que integra plataformas de análisis y desarrollo como Posit Cloud, RStudio, Google Colab, VS Code y LaTeX, junto con lenguajes clave como HTML5, CSS y JavaScript. Complementamos este flujo de trabajo accediendo a datos científicos de Kaggle, NASA, Copernicus, OpenTopography y el servicio de cambio climático de ECMWF, mientras que para el análisis geoespacial y la identificación de derrames utilizamos QGIS, ArcGIS y Google Earth. Finalmente, aseguramos la productividad y difusión de resultados mediante herramientas colaborativas como GitHub, Google Drive, RPubs, Microsoft Teams y la suite de Office, impulsando así un enfoque moderno, eficiente y de alta precisión.
     </p>
   </section>
+
+  <section class="section-box">
+    <img
+      src="https://mssarmientoo.github.io/figempa/assets/images/tools/ArcGIS_globe.png"
+      alt="Collage de las herramientas utilizadas en el proyecto"
+      class="tools-img"
+    />
+  </section>
 `;
 
 toolsLink.addEventListener("click", (e) => {
