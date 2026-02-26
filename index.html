@@ -1,174 +1,336 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/087dfb62b8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/087dfb62b8.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Styles -->
-     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles-dist.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles-dist.css" />
 
     <!-- Title -->
     <title>Análisis estadístico de plantas solares a nivel mundial</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <a href="https://mssarmientoo.github.io/figempa/" class="figmpa-logo-link"><img src="assets/images/logo.png" alt="Logo FIGMPA / Proyecto" loading="lazy" class="figmpa-logo"></a>
-        <div class="menu-btn" id="menu-btn">
-            <span class="top-bar convert-bars" id="top-bar"></span>
-            <span class="middle-bar visible" id="middle-bar"></span>
-            <span class="bottom-bar convert-bars" id="bottom-bar"></span>
-        </div>
-        <nav class="navbar" id="navbar">
-            <ul class="navlist">
-                <li class="navitem">
-                    <a href="#home" class="navlink" id="home-link">Inicio</a>
-                </li>
-                <li class="navitem">
-                    <a href="#interactive-map" class="navlink" id="interactive-map-link">Mapa Interactivo</a>
-                </li>
-                <li class="navitem navitem-show">
-                    <a href="#project-info" class="navlink navlink-deploy" id="about-proyect-link">
-                        Introducción
-                        <img src="assets/icons/arrow.svg" alt="flecha" class="navitem-arrow">
-                    </a>
-                    <ul class="navlist-nested">
-                        <li class="navitem-inside">
-                            <a href="#problem" class="navlink navlink-inside navl-project">Planteamiento del Problema</a>
-                        </li>
-                        <li class="navitem-inside">
-                            <a href="#map" class="navlink navlink-inside navl-project">Mapa de Ubicación Geográfica</a>
-                        </li>
-                        <li class="navitem-inside">
-                            <a href="#objectives" class="navlink navlink-inside navl-project">Objetivos</a>
-                        </li>
-                        <li class="navitem-inside">
-                            <a href="#about-us" class="navlink navlink-inside navl-project">Sobre Nosotros</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navitem navitem-show">
-                    <a href="#descriptive-statistics" class="navlink navlink-deploy" id="descriptive-statistics-link">
-                        Estadística Descriptiva 
-                        <img src="assets/icons/arrow.svg" alt="flecha" class="navitem-arrow">
-                    </a>
-                    <ul class="navlist-nested">
-                        <li class="navitem-inside">
-                            <a href="#ds-methodology" class="navlink navlink-inside navl-ds">Metodología</a>
-                        </li>
-                        <li class="navitem-inside">
-                            <a href="#ds-variables-tables" class="navlink navlink-inside navl-ds">Tablas de Variables</a>
-                        </li>
-                        <li class="navitem-inside">
-                            <a href="#ds-variables" class="navlink navlink-inside navl-ds">Variables</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navitem">
-                    <a href="#inferential-statistics" class="navlink" id="inferential-statistics-link">Estadística Inferencial</a>
-                </li>
-                <li class="navitem">
-                    <a href="#regression-models" class="navlink" id="regression-models-link">Modelos de Regresión</a>
-                </li>
-                <li class="navitem">
-                    <a href="#machine-learning" class="navlink" id="machine-learning-link">Machine Learning</a>
-                </li>
-                <li class="navitem">
-                    <a href="#tools" class="navlink" id="tools-link">Herramientas</a>
-                </li>
+      <a href="https://mssarmientoo.github.io/figempa/" class="figmpa-logo-link"
+        ><img
+          src="assets/images/logo.png"
+          alt="Logo FIGMPA / Proyecto"
+          loading="lazy"
+          class="figmpa-logo"
+      /></a>
+      <div class="menu-btn" id="menu-btn">
+        <span class="top-bar convert-bars" id="top-bar"></span>
+        <span class="middle-bar visible" id="middle-bar"></span>
+        <span class="bottom-bar convert-bars" id="bottom-bar"></span>
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul class="navlist">
+          <li class="navitem">
+            <a
+              href="#interactive-map"
+              class="navlink"
+              id="interactive-map-link"
+            >
+              Mapa Interactivo
+            </a>
+          </li>
+          <li class="navitem">
+            <a href="#home" class="navlink" id="home-link">Inicio</a>
+          </li>
+          <li class="navitem navitem-show">
+            <a
+              href="#project-info"
+              class="navlink navlink-deploy"
+              id="about-proyect-link"
+            >
+              Introducción
+              <img
+                src="assets/icons/arrow.svg"
+                alt="flecha"
+                class="navitem-arrow"
+              />
+            </a>
+            <ul class="navlist-nested">
+              <li class="navitem-inside">
+                <a href="#problem" class="navlink navlink-inside navl-project"
+                  >Planteamiento del Problema</a
+                >
+              </li>
+              <li class="navitem-inside">
+                <a href="#map" class="navlink navlink-inside navl-project"
+                  >Mapa de Ubicación Geográfica</a
+                >
+              </li>
+              <li class="navitem-inside">
+                <a
+                  href="#objectives"
+                  class="navlink navlink-inside navl-project"
+                  >Objetivos</a
+                >
+              </li>
             </ul>
-        </nav>
+          </li>
+          <li class="navitem navitem-show">
+            <a
+              href="#descriptive-statistics"
+              class="navlink navlink-deploy"
+              id="descriptive-statistics-link"
+            >
+              Estadística Descriptiva
+              <img
+                src="assets/icons/arrow.svg"
+                alt="flecha"
+                class="navitem-arrow"
+              />
+            </a>
+            <ul class="navlist-nested">
+              <li class="navitem-inside">
+                <a href="#ds-methodology" class="navlink navlink-inside navl-ds"
+                  >Metodología</a
+                >
+              </li>
+              <li class="navitem-inside">
+                <a
+                  href="#ds-variables-tables"
+                  class="navlink navlink-inside navl-ds"
+                  >Tablas de Variables</a
+                >
+              </li>
+              <li class="navitem-inside">
+                <a href="#ds-variables" class="navlink navlink-inside navl-ds"
+                  >Variables</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="navitem">
+            <a
+              href="#inferential-statistics"
+              class="navlink"
+              id="inferential-statistics-link"
+              >Estadística Inferencial</a
+            >
+          </li>
+          <li class="navitem">
+            <a
+              href="#regression-models"
+              class="navlink"
+              id="regression-models-link"
+              >Modelos de Regresión</a
+            >
+          </li>
+          <li class="navitem">
+            <a
+              href="#machine-learning"
+              class="navlink"
+              id="machine-learning-link"
+              >Machine Learning</a
+            >
+          </li>
+          <li class="navitem navitem-show">
+            <a
+              href="#more"
+              class="navlink navlink-deploy"
+              id="more-link"
+            >
+              Más
+              <img
+                src="assets/icons/arrow.svg"
+                alt="flecha"
+                class="navitem-arrow"
+              />
+            </a>
+            <ul class="navlist-nested">
+              <li class="navitem-inside">
+                <a
+                  href="#tools"
+                  class="navlink navlink-inside navl-project"
+                  id="tools-link"
+                >
+                  Herramientas
+                </a>
+              </li>
+              <li class="navitem-inside">
+                <a
+                  href="#about-us"
+                  class="navlink navlink-inside navl-project"
+                  id="about-us-link"
+                >
+                  Sobre Nosotros
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="inicio" class="hero-video-wrap section-anchor" role="region" aria-label="Portada con video">
-            <video autoplay muted loop id="heroVideo" class="hero-video">
-                <source src="assets/videos/uce.mp4" type="video/mp4">
-                Tu navegador no soporta el tag de video.
-            </video>
+      <section
+        id="inicio"
+        class="hero-video-wrap section-anchor"
+        role="region"
+        aria-label="Portada con video"
+      >
+        <video autoplay muted loop id="heroVideo" class="hero-video">
+          <source src="assets/videos/uce.mp4" type="video/mp4" />
+          Tu navegador no soporta el tag de video.
+        </video>
 
-            <div class="video-overlay"></div>
+        <div class="video-overlay"></div>
 
-            <div class="hero-inner-centered">
-                <h1 data-i18n="hero_title_centered" class="title-1">ANÁLISIS ESTADÍSTICO DE PLANTAS SOLARES A NIVEL MUNDIAL</h1>
-                <p class="lead" data-i18n="hero_lead_centered">Análisis estadístico de datos, aplicando métodos descriptivos e inferenciales con el uso del lenguaje R en RStudio</p>
-            </div>
-        </section>
-        <section class="important section-box">
-            <h2 class="title-2">¡IMPORTANTE!</h2>
-            <p>Este proyecto tiene un carácter exclusivamente académico y se encuentra en continuo desarrollo. Los datos y análisis presentados se utilizan únicamente con fines educativos.</p>
-        </section>
-        <section class="mision-vision section-box">
-            <h2 class="title-2">MISIÓN - VISIÓN</h2>
-            <div class="mision-vision-container">
-                <div class="mision">
-                    <h3 class="title-3">Misión</h3>
-                    <p>Aplicar métodos estadísticos para identificar y cuantificar los factores que determinan la eficiencia real de las plantas solares a nivel mundial.</p>
-                </div>
-                <div class="vision">
-                    <h3 class="title-3">Visión</h3>
-                    <p>Convertirnos en un análisis estadístico clave que revele las verdaderas tendencias y el potencial global de la energía solar.</p>
-                </div>
-            </div>
-        </section>
-        <section id="motivation" class="motivation section-box">
-            <div class="card-box">
-                <div class="motivation-text-container">
-                    <h2 class="title-2">MOTIVACIONES DEL PROYECTO</h2>
-                    <p data-i18n="motivaciones_text">Como estudiantes de la Universidad Central del Ecuador, desarrollamos este proyecto con el propósito de aplicar la estadística como una herramienta fundamental en el análisis de datos. Nuestro objetivo es no solo interpretar la información, sino también destacar la relevancia de la estadística en la toma de decisiones informadas dentro del ámbito profesional relacionado con nuestra carrera.</p>
-                    <a href="https://www.uce.edu.ec/web/figempa" target="_blank" style="font-weight:700" class="uce-figempa-link">UNIVERSIDAD CENTRAL DEL ECUADOR</a>
-                </div>
-                <img src="assets/images/facultad.jpg" alt="Edificio de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental." class="motivation-img"/>
-            </div>
-        </section>
+        <div class="hero-inner-centered">
+          <h1 data-i18n="hero_title_centered" class="title-1">
+            ANÁLISIS ESTADÍSTICO DE PLANTAS SOLARES A NIVEL MUNDIAL
+          </h1>
+          <p class="lead" data-i18n="hero_lead_centered">
+            Análisis estadístico de datos, aplicando métodos descriptivos e
+            inferenciales con el uso del lenguaje R en RStudio
+          </p>
+        </div>
+      </section>
+      <section class="important section-box">
+        <h2 class="title-2">¡IMPORTANTE!</h2>
+        <p>
+          Este proyecto tiene un carácter exclusivamente académico y se
+          encuentra en continuo desarrollo. Los datos y análisis presentados se
+          utilizan únicamente con fines educativos.
+        </p>
+      </section>
+      <section class="mision-vision section-box">
+        <h2 class="title-2">MISIÓN - VISIÓN</h2>
+        <div class="mision-vision-container">
+          <div class="mision">
+            <h3 class="title-3">Misión</h3>
+            <p>
+              Aplicar métodos estadísticos para identificar y cuantificar los
+              factores que determinan la eficiencia real de las plantas solares
+              a nivel mundial.
+            </p>
+          </div>
+          <div class="vision">
+            <h3 class="title-3">Visión</h3>
+            <p>
+              Convertirnos en un análisis estadístico clave que revele las
+              verdaderas tendencias y el potencial global de la energía solar.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="motivation" class="motivation section-box">
+        <div class="card-box">
+          <div class="motivation-text-container">
+            <h2 class="title-2">MOTIVACIONES DEL PROYECTO</h2>
+            <p data-i18n="motivaciones_text">
+              Como estudiantes de la Universidad Central del Ecuador,
+              desarrollamos este proyecto con el propósito de aplicar la
+              estadística como una herramienta fundamental en el análisis de
+              datos. Nuestro objetivo es no solo interpretar la información,
+              sino también destacar la relevancia de la estadística en la toma
+              de decisiones informadas dentro del ámbito profesional relacionado
+              con nuestra carrera.
+            </p>
+            <a
+              href="https://www.uce.edu.ec/web/figempa"
+              target="_blank"
+              style="font-weight: 700"
+              class="uce-figempa-link"
+              >UNIVERSIDAD CENTRAL DEL ECUADOR</a
+            >
+          </div>
+          <img
+            src="assets/images/facultad.jpg"
+            alt="Edificio de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental."
+            class="motivation-img"
+          />
+        </div>
+      </section>
     </main>
     <footer class="footer-wrap">
-        <div class="footer-inner">
-            <ul class="team-list">
-                <li>GUALAN SHELBY</li>
-                <li>MILES JULEYDI</li>
-                <li>NEIRA FERNANDO</li>
-                <li>RAMÍREZ CARLOS</li>
-                <li>SARMIENTO MARTÍN</li>
-            </ul>
+      <div class="footer-inner">
+        <ul class="team-list">
+          <li>GUALAN SHELBY</li>
+          <li>MILES JULEYDI</li>
+          <li>NEIRA FERNANDO</li>
+          <li>RAMÍREZ CARLOS</li>
+          <li>SARMIENTO MARTÍN</li>
+        </ul>
 
-            <div class="copyright-block">
-                <p style="margin-bottom:10px">COPYRIGHT © 2025, GRUPO 1 - ESTADÍSTICA.</p>
-                <p style="font-weight:700">UNIVERSIDAD CENTRAL DEL ECUADOR - FIGEMPA</p>
-                <p style="font-size:0.8rem">TODOS LOS DERECHOS RESERVADOS.</p>
-                
-                <div class="social-icons" style="margin-top:15px">
-                    <a href="https://www.instagram.com/figempa_uce/" target="_blank" aria-label="Instagram FIGEMPA UCE" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/Figempa/" target="_blank" aria-label="Facebook FIGEMPA" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.uce.edu.ec/web/figempa" target="_blank" aria-label="Sitio web FIGEMPA" class="social-link"><i class="fa-solid fa-globe"></i></a>
-                </div>
-            </div>
+        <div class="copyright-block">
+          <p style="margin-bottom: 10px">
+            COPYRIGHT © 2025, GRUPO 1 - ESTADÍSTICA.
+          </p>
+          <p style="font-weight: 700">
+            UNIVERSIDAD CENTRAL DEL ECUADOR - FIGEMPA
+          </p>
+          <p style="font-size: 0.8rem">TODOS LOS DERECHOS RESERVADOS.</p>
+
+          <div class="social-icons" style="margin-top: 15px">
+            <a
+              href="https://www.instagram.com/figempa_uce/"
+              target="_blank"
+              aria-label="Instagram FIGEMPA UCE"
+              class="social-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/Figempa/"
+              target="_blank"
+              aria-label="Facebook FIGEMPA"
+              class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.uce.edu.ec/web/figempa"
+              target="_blank"
+              aria-label="Sitio web FIGEMPA"
+              class="social-link"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- ChatBot -->
     <button id="chatbotBtn" class="chatbot-btn">🤖</button>
 
     <div id="chatbotModal" class="chatbot-modal">
-        <div class="chatbot-header">
-            <p class="chatbot-header-text">Asistente Solar 🤖</p>
-            <button id="closeChatbot" class="closeChatbot-btn">&times;</button>
-        </div>
-        <div id="chatbox" class="chat-box">
-            <p class="bot-message">Hola! Soy el Asistente Solar. Pregúntame sobre las variables, la metodología o los modelos de regresión utilizados en el proyecto.</p>
-        </div>
-        <div class="chatInput-container">
-            <input type="text" id="chatInput" class="chat-input" placeholder="Escribe tu pregunta..." />
-            <button id="sendChatBtn" class="sendChat-btn">Enviar</button>
-        </div>
+      <div class="chatbot-header">
+        <p class="chatbot-header-text">Asistente Solar 🤖</p>
+        <button id="closeChatbot" class="closeChatbot-btn">&times;</button>
+      </div>
+      <div id="chatbox" class="chat-box">
+        <p class="bot-message">
+          Hola! Soy el Asistente Solar. Pregúntame sobre las variables, la
+          metodología o los modelos de regresión utilizados en el proyecto.
+        </p>
+      </div>
+      <div class="chatInput-container">
+        <input
+          type="text"
+          id="chatInput"
+          class="chat-input"
+          placeholder="Escribe tu pregunta..."
+        />
+        <button id="sendChatBtn" class="sendChat-btn">Enviar</button>
+      </div>
     </div>
 
     <!-- JavaScript -->
-     <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

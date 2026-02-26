@@ -61,6 +61,7 @@ navLinks.forEach(link => (
       const classElements = [...e.target.classList];
       if (idLink === "descriptive-statistics-link"
         || idLink === "about-proyect-link"
+        || idLink === "more-link"
         || classElements.includes('navitem-arrow')) {
         return
       }
@@ -233,31 +234,6 @@ const aboutProyectCode = `
         <li class="objectives-items">Emplear un modelo de probabilidad para establecer conclusiones sobre las plantas solares en el mundo a partir de los resultados de muestra.</li>
         <li class="objectives-items">Deducir relaciones entre variables de las plantas solares a nivel mundial con el fin de realizar estimaciones.</li>
     </ol>
-  </section>
-
-  <section class="section-box" id="about-us">
-    <h2 class="title-2">SOBRE NOSOTROS</h2>
-    <p class="about-us-description">Somos estudiantes de segundo semestre de la Universidad Central del Ecuador, pertenecientes a la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental (FIGEMPA), en la carrera de Ingeniería en Petróleos. En el marco de la asignatura de Estadística, presentamos este proyecto con el objetivo de ofrecer información clara, pertinente y accesible para quienes se interesan en esta área del conocimiento.</p>
-    <p class="about-us-description">Como futuros profesionales, aspiramos a formarnos como ingenieros comprometidos, preparados y apasionados, capaces de contribuir al desarrollo de una industria que avanza de manera constante gracias a la innovación tecnológica y al estudio científico de las energias sostenibles.</p>
-    <p class="about-us-description">Confiamos en el valor del aprendizaje conjunto y en la importancia de compartir saberes. Por ello, este trabajo no solo constituye un componente de nuestra formación académica, sino también un aporte para fomentar una comprensión más sólida de un campo tan dinámico y relevante en el contexto actual.</p>
-    <h3 class="title-3 about-us-title-3">Nuestro Grupo de Trabajo</h3>
-    <div class="cvs-container">
-      <a href="https://drive.google.com/file/d/1R3lUrsZgvpMBEEy31lrqK0p4FxZZNQTE/view" class="regression-rs-link" target="_blank">
-        <span class="regression-link-title">Gualan Shelby</span>
-      </a>
-      <a href="https://drive.google.com/file/d/1eyJ8lzU8gzxTOuF8DdlKOnAWnbi5nUDv/view" class="regression-rs-link" target="_blank">
-        <span class="regression-link-title">Juleydi Miles</span>
-      </a>
-      <a href="https://drive.google.com/file/d/1jwGEu2l3I8LQNb7KCrAycLZLvr2zNent/view" class="regression-rs-link" target="_blank">
-        <span class="regression-link-title">Fernando Neira</span>
-      </a>
-      <a href="https://drive.google.com/file/d/10gKZVoes30IPzWsDmMNpamIt_0wHh6xv/view" class="regression-rs-link" target="_blank">
-        <span class="regression-link-title">Carlos Ramírez</span>
-      </a>
-      <a href="https://drive.google.com/file/d/1n2qUJGUfGpwbh1u6eyi27vV_v3Af84yh/view" class="regression-rs-link" target="_blank">
-        <span class="regression-link-title">Martín Sarmiento</span>
-      </a>
-    </div>
   </section>
 `;
 
@@ -651,7 +627,7 @@ const iSCualitativesVariables = `
       </figure>
     </a>
     
-    <a href="https://rpubs.com/Caliche/1401458" target="_blanket">
+    <a href="https://rpubs.com/JULEY/1402624" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcualit/predominant-wind-direction.webp" alt="Imagen representativa de la varible Dirección del viento predominante" class="ds-vcualit-img">
         <figcaption>Dirección del viento predominante</figcaption>
@@ -693,7 +669,7 @@ const iSCuantitativesVariables = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/Caliche/1400348" target="_blanket">
+    <a href="https://rpubs.com/JULEY/1402616" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/elevation.webp" alt="Imagen representativa de la variable Elevación" class="ds-vcuanti-img"/>
         <figcaption>Elevación</figcaption>
@@ -735,14 +711,14 @@ const iSCuantitativesVariables = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/Fernando_Neira/1399723" target="_blanket">
+    <a href="https://rpubs.com/JULEY/1402665" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/solar-aptitude.webp" alt="Imagen representativa de la variable Aptitud Solar" class="ds-vcuanti-img"/>
         <figcaption>Aptitud Solar</figcaption>
       </figure>
     </a>
 
-    <a href="https://rpubs.com/Fernando_Neira/1399977" target="_blanket">
+    <a href="https://rpubs.com/JULEY/1402606" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/humidity.webp" alt="Imagen representativa de la variable Humedad" class="ds-vcuanti-img"/>
         <figcaption>Humedad</figcaption>
@@ -770,14 +746,14 @@ const iSCuantitativesVariables = `
       </figure>
     </a>
 
-    <a href="https://rpubs.com/Juleydi/1401404" target="_blanket">
+    <a href="https://rpubs.com/JULEY/1402668" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/optimal-tilt.webp" alt="Imagen representativa de la variable Inclinación Óptima" class="ds-vcuanti-img"/>
         <figcaption>Inclinación Óptima</figcaption>
       </figure>
     </a>
 
-    <a href="https://rpubs.com/Juleydi/1401403" target="_blanket">
+    <a href="https://rpubs.com/JULEY/1402614" target="_blanket">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/max-power-hour.webp" alt="Imagen representativa de la variable Potencial Fotovoltaico" class="ds-vcuanti-img"/>
         <figcaption>Potencial Fotovoltaico</figcaption>
@@ -1149,6 +1125,50 @@ toolsLink.addEventListener("click", (e) => {
   mainElement.innerHTML = "";
   mainElement.innerHTML = toolsCode;
 })
+
+
+
+
+/* ----------------------------
+   ABOUT US
+---------------------------- */
+// About Us section
+const aboutUsHTML = `
+<h1 class="title-1">Sobre Nosotros</h1>
+<div class="section-box">
+  <p class="about-us-description">Somos estudiantes de segundo semestre de la Universidad Central del Ecuador, pertenecientes a la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental (FIGEMPA), en la carrera de Ingeniería en Petróleos. En el marco de la asignatura de Estadística, presentamos este proyecto con el objetivo de ofrecer información clara, pertinente y accesible para quienes se interesan en esta área del conocimiento.</p>
+  <p class="about-us-description">Como futuros profesionales, aspiramos a formarnos como ingenieros comprometidos, preparados y apasionados, capaces de contribuir al desarrollo de una industria que avanza de manera constante gracias a la innovación tecnológica y al estudio científico de las energias sostenibles.</p>
+  <p class="about-us-description">Confiamos en el valor del aprendizaje conjunto y en la importancia de compartir saberes. Por ello, este trabajo no solo constituye un componente de nuestra formación académica, sino también un aporte para fomentar una comprensión más sólida de un campo tan dinámico y relevante en el contexto actual.</p>
+</div>
+<section class="section-box">
+  <h2 class="title-2">Nuestro Equipo</h2>
+  <p>A continuación tienes disponible los curriculum vitae de cada uno de los integrantes que conforman este grupo de trabajo.</p>
+  <div class="cvs-container">
+    <a href="https://drive.google.com/file/d/1R3lUrsZgvpMBEEy31lrqK0p4FxZZNQTE/view" class="regression-rs-link" target="_blank">
+      <span class="regression-link-title">Gualan Shelby</span>
+    </a>
+    <a href="https://drive.google.com/file/d/1zgpJ5q-Zihij5XHkioqKrdmJH0a-KWYK/view" class="regression-rs-link" target="_blank">
+      <span class="regression-link-title">Juleydi Miles</span>
+    </a>
+    <a href="https://drive.google.com/file/d/1jwGEu2l3I8LQNb7KCrAycLZLvr2zNent/view" class="regression-rs-link" target="_blank">
+      <span class="regression-link-title">Fernando Neira</span>
+    </a>
+    <a href="https://drive.google.com/file/d/10gKZVoes30IPzWsDmMNpamIt_0wHh6xv/view" class="regression-rs-link" target="_blank">
+      <span class="regression-link-title">Carlos Ramírez</span>
+    </a>
+    <a href="https://drive.google.com/file/d/1n2qUJGUfGpwbh1u6eyi27vV_v3Af84yh/view" class="regression-rs-link" target="_blank">
+      <span class="regression-link-title">Martín Sarmiento</span>
+    </a>
+  </div>
+</section>
+`;
+
+aboutUsLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainElement.setAttribute("style", `margin-top:${header.offsetHeight + 10}px`);
+  mainElement.innerHTML = "";
+  mainElement.innerHTML = aboutUsHTML;
+});
 
 
 
