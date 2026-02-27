@@ -1,336 +1,233 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/087dfb62b8.js"
-      crossorigin="anonymous"
-    ></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles-dist.css" />
+  <script src="https://kit.fontawesome.com/087dfb62b8.js" crossorigin="anonymous"></script>
 
-    <!-- Title -->
-    <title>Análisis estadístico de plantas solares a nivel mundial</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="https://mssarmientoo.github.io/figempa/" class="figmpa-logo-link"
-        ><img
-          src="assets/images/logo.png"
-          alt="Logo FIGMPA / Proyecto"
-          loading="lazy"
-          class="figmpa-logo"
-      /></a>
-      <div class="menu-btn" id="menu-btn">
-        <span class="top-bar convert-bars" id="top-bar"></span>
-        <span class="middle-bar visible" id="middle-bar"></span>
-        <span class="bottom-bar convert-bars" id="bottom-bar"></span>
-      </div>
-      <nav class="navbar" id="navbar">
-        <ul class="navlist">
-          <li class="navitem">
-            <a
-              href="#interactive-map"
-              class="navlink"
-              id="interactive-map-link"
-            >
-              Mapa Interactivo
-            </a>
-          </li>
-          <li class="navitem">
-            <a href="#home" class="navlink" id="home-link">Inicio</a>
-          </li>
-          <li class="navitem navitem-show">
-            <a
-              href="#project-info"
-              class="navlink navlink-deploy"
-              id="about-proyect-link"
-            >
-              Introducción
-              <img
-                src="assets/icons/arrow.svg"
-                alt="flecha"
-                class="navitem-arrow"
-              />
-            </a>
-            <ul class="navlist-nested">
-              <li class="navitem-inside">
-                <a href="#problem" class="navlink navlink-inside navl-project"
-                  >Planteamiento del Problema</a
-                >
-              </li>
-              <li class="navitem-inside">
-                <a href="#map" class="navlink navlink-inside navl-project"
-                  >Mapa de Ubicación Geográfica</a
-                >
-              </li>
-              <li class="navitem-inside">
-                <a
-                  href="#objectives"
-                  class="navlink navlink-inside navl-project"
-                  >Objetivos</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="navitem navitem-show">
-            <a
-              href="#descriptive-statistics"
-              class="navlink navlink-deploy"
-              id="descriptive-statistics-link"
-            >
-              Estadística Descriptiva
-              <img
-                src="assets/icons/arrow.svg"
-                alt="flecha"
-                class="navitem-arrow"
-              />
-            </a>
-            <ul class="navlist-nested">
-              <li class="navitem-inside">
-                <a href="#ds-methodology" class="navlink navlink-inside navl-ds"
-                  >Metodología</a
-                >
-              </li>
-              <li class="navitem-inside">
-                <a
-                  href="#ds-variables-tables"
-                  class="navlink navlink-inside navl-ds"
-                  >Tablas de Variables</a
-                >
-              </li>
-              <li class="navitem-inside">
-                <a href="#ds-variables" class="navlink navlink-inside navl-ds"
-                  >Variables</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="navitem">
-            <a
-              href="#inferential-statistics"
-              class="navlink"
-              id="inferential-statistics-link"
-              >Estadística Inferencial</a
-            >
-          </li>
-          <li class="navitem">
-            <a
-              href="#regression-models"
-              class="navlink"
-              id="regression-models-link"
-              >Modelos de Regresión</a
-            >
-          </li>
-          <li class="navitem">
-            <a
-              href="#machine-learning"
-              class="navlink"
-              id="machine-learning-link"
-              >Machine Learning</a
-            >
-          </li>
-          <li class="navitem navitem-show">
-            <a
-              href="#more"
-              class="navlink navlink-deploy"
-              id="more-link"
-            >
-              Más
-              <img
-                src="assets/icons/arrow.svg"
-                alt="flecha"
-                class="navitem-arrow"
-              />
-            </a>
-            <ul class="navlist-nested">
-              <li class="navitem-inside">
-                <a
-                  href="#tools"
-                  class="navlink navlink-inside navl-project"
-                  id="tools-link"
-                >
-                  Herramientas
-                </a>
-              </li>
-              <li class="navitem-inside">
-                <a
-                  href="#about-us"
-                  class="navlink navlink-inside navl-project"
-                  id="about-us-link"
-                >
-                  Sobre Nosotros
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section
-        id="inicio"
-        class="hero-video-wrap section-anchor"
-        role="region"
-        aria-label="Portada con video"
-      >
-        <video autoplay muted loop id="heroVideo" class="hero-video">
-          <source src="assets/videos/uce.mp4" type="video/mp4" />
-          Tu navegador no soporta el tag de video.
-        </video>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles-dist.css" />
 
-        <div class="video-overlay"></div>
+  <title>Análisis Estadístico de Plantas Solares a Nivel Mundial</title>
+  <style>
+    .lang-toggle-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-        <div class="hero-inner-centered">
-          <h1 data-i18n="hero_title_centered" class="title-1">
-            ANÁLISIS ESTADÍSTICO DE PLANTAS SOLARES A NIVEL MUNDIAL
-          </h1>
-          <p class="lead" data-i18n="hero_lead_centered">
-            Análisis estadístico de datos, aplicando métodos descriptivos e
-            inferenciales con el uso del lenguaje R en RStudio
-          </p>
-        </div>
-      </section>
-      <section class="important section-box">
-        <h2 class="title-2">¡IMPORTANTE!</h2>
-        <p>
-          Este proyecto tiene un carácter exclusivamente académico y se
-          encuentra en continuo desarrollo. Los datos y análisis presentados se
-          utilizan únicamente con fines educativos.
+    .lang-toggle-btn.regression-rs-link {
+      padding: 5px 10px;
+      /* Tamaño del padding original */
+      border-radius: 5px;
+      /* Radio de esquina sutil, original */
+      min-height: auto;
+      /* Evita que herede una altura gigante del componente original */
+    }
+
+    .lang-toggle-btn .regression-link-title {
+      font-size: 0.9rem;
+      /* Misma tipografía que el navbar normal */
+      font-weight: 600;
+      /* Negrita */
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-copy {
+      margin-bottom: 10px;
+    }
+
+    .footer-university {
+      font-weight: 700;
+    }
+
+    .footer-rights {
+      font-size: 0.8rem;
+    }
+
+    /* ── Shared section hero banner ── */
+    .section-hero {
+      position: relative;
+      width: 100%;
+      padding: 52px 32px 44px;
+      text-align: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0b0f1a 0%, #111827 50%, #0b0f1a 100%);
+    }
+
+    .section-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 20% 50%, rgba(251, 191, 36, .07) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(16, 185, 129, .06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .section-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: #fbbf24;
+      background: rgba(251, 191, 36, .1);
+      border: 1px solid rgba(251, 191, 36, .25);
+      border-radius: 999px;
+      padding: 5px 14px;
+      margin-bottom: 18px;
+    }
+
+    .section-hero-eyebrow i {
+      font-size: .8rem;
+    }
+
+    .section-hero h1 {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      font-weight: 700;
+      letter-spacing: .04em;
+      background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 40%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 0 0 12px;
+      line-height: 1.15;
+    }
+
+    .section-hero-sub {
+      font-size: .95rem;
+      color: rgba(255, 255, 255, .55);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="https://mssarmientoo.github.io/figempa/" class="figmpa-logo-link"><img src="assets/images/logo.png"
+        alt="Logo FIGMPA / Proyecto" loading="lazy" class="figmpa-logo" /></a>
+    <div class="menu-btn" id="menu-btn">
+      <span class="top-bar convert-bars" id="top-bar"></span>
+      <span class="middle-bar visible" id="middle-bar"></span>
+      <span class="bottom-bar convert-bars" id="bottom-bar"></span>
+    </div>
+    <nav class="navbar" id="navbar">
+      <ul class="navlist">
+        <li class="navitem"><a href="#interactive-map" class="navlink" id="interactive-map-link"
+            data-i18n="nav_map">Mapa Interactivo</a></li>
+        <li class="navitem"><a href="#home" class="navlink" id="home-link" data-i18n="nav_home">Inicio</a></li>
+
+        <li class="navitem navitem-show">
+          <a href="#project-info" class="navlink navlink-deploy" id="about-proyect-link" data-i18n="nav_intro">
+            Introducción
+            <img src="assets/icons/arrow.svg" alt="flecha" class="navitem-arrow" />
+          </a>
+          <ul class="navlist-nested">
+            <li class="navitem-inside"><a href="#problem" class="navlink navlink-inside navl-project"
+                data-i18n="nav_problem">Planteamiento del Problema</a></li>
+            <li class="navitem-inside"><a href="#map" class="navlink navlink-inside navl-project"
+                data-i18n="nav_geo">Mapa de Ubicación Geográfica</a></li>
+            <li class="navitem-inside"><a href="#objectives" class="navlink navlink-inside navl-project"
+                data-i18n="nav_obj">Objetivos</a></li>
+          </ul>
+        </li>
+
+        <li class="navitem navitem-show">
+          <a href="#descriptive-statistics" class="navlink navlink-deploy navl-ds" id="descriptive-statistics-link"
+            data-i18n="nav_desc_stats">
+            Estadística Descriptiva
+            <img src="assets/icons/arrow.svg" alt="flecha" class="navitem-arrow" />
+          </a>
+          <ul class="navlist-nested">
+            <li class="navitem-inside"><a href="#methodology" class="navlink navlink-inside navl-project"
+                data-i18n="nav_methodology">Metodología</a></li>
+            <li class="navitem-inside"><a href="#variables-table" class="navlink navlink-inside navl-project"
+                data-i18n="nav_vars_table">Tablas de Variables</a></li>
+            <li class="navitem-inside"><a href="#variables" class="navlink navlink-inside navl-project"
+                data-i18n="nav_vars">Variables</a></li>
+          </ul>
+        </li>
+
+        <li class="navitem"><a href="#inferential-statistics" class="navlink" id="inferential-statistics-link"
+            data-i18n="nav_inf_stats">Estadística Inferencial</a></li>
+        <li class="navitem"><a href="#regression-models" class="navlink" id="regression-models-link"
+            data-i18n="nav_reg_models">Modelos de Regresión</a></li>
+        <li class="navitem"><a href="#machine-learning" class="navlink" id="machine-learning-link"
+            data-i18n="nav_ml">Machine Learning</a></li>
+
+        <li class="navitem navitem-show">
+          <a href="#more" class="navlink navlink-deploy" id="more-link" data-i18n="nav_more">
+            Más
+            <img src="assets/icons/arrow.svg" alt="flecha" class="navitem-arrow" />
+          </a>
+          <ul class="navlist-nested">
+            <li class="navitem-inside"><a href="#tools" class="navlink navlink-inside navl-project" id="tools-link"
+                data-i18n="nav_tools">Herramientas</a></li>
+            <li class="navitem-inside"><a href="#about-us" class="navlink navlink-inside navl-project"
+                id="about-us-link" data-i18n="nav_about">Sobre Nosotros</a></li>
+          </ul>
+        </li>
+
+        <li class="navitem" style="display:flex; align-items:center;">
+          <button id="langToggle" class="lang-toggle-btn regression-rs-link">
+            <span class="regression-link-title" style="pointer-events: none;">ES / EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  </main>
+  <footer class="footer-wrap">
+    <div class="footer-inner">
+      <ul class="team-list">
+        <li>GUALAN SHELBY</li>
+        <li>MILES JULEYDI</li>
+        <li>NEIRA FERNANDO</li>
+        <li>RAMÍREZ CARLOS</li>
+        <li>SARMIENTO MARTÍN</li>
+      </ul>
+
+      <div class="copyright-block">
+        <p class="footer-copy" data-i18n="footer_copy">
+          COPYRIGHT © 2026, GRUPO 1 - ESTADÍSTICA Y PROBABILIDAD.
         </p>
-      </section>
-      <section class="mision-vision section-box">
-        <h2 class="title-2">MISIÓN - VISIÓN</h2>
-        <div class="mision-vision-container">
-          <div class="mision">
-            <h3 class="title-3">Misión</h3>
-            <p>
-              Aplicar métodos estadísticos para identificar y cuantificar los
-              factores que determinan la eficiencia real de las plantas solares
-              a nivel mundial.
-            </p>
-          </div>
-          <div class="vision">
-            <h3 class="title-3">Visión</h3>
-            <p>
-              Convertirnos en un análisis estadístico clave que revele las
-              verdaderas tendencias y el potencial global de la energía solar.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="motivation" class="motivation section-box">
-        <div class="card-box">
-          <div class="motivation-text-container">
-            <h2 class="title-2">MOTIVACIONES DEL PROYECTO</h2>
-            <p data-i18n="motivaciones_text">
-              Como estudiantes de la Universidad Central del Ecuador,
-              desarrollamos este proyecto con el propósito de aplicar la
-              estadística como una herramienta fundamental en el análisis de
-              datos. Nuestro objetivo es no solo interpretar la información,
-              sino también destacar la relevancia de la estadística en la toma
-              de decisiones informadas dentro del ámbito profesional relacionado
-              con nuestra carrera.
-            </p>
-            <a
-              href="https://www.uce.edu.ec/web/figempa"
-              target="_blank"
-              style="font-weight: 700"
-              class="uce-figempa-link"
-              >UNIVERSIDAD CENTRAL DEL ECUADOR</a
-            >
-          </div>
-          <img
-            src="assets/images/facultad.jpg"
-            alt="Edificio de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental."
-            class="motivation-img"
-          />
-        </div>
-      </section>
-    </main>
-    <footer class="footer-wrap">
-      <div class="footer-inner">
-        <ul class="team-list">
-          <li>GUALAN SHELBY</li>
-          <li>MILES JULEYDI</li>
-          <li>NEIRA FERNANDO</li>
-          <li>RAMÍREZ CARLOS</li>
-          <li>SARMIENTO MARTÍN</li>
-        </ul>
-
-        <div class="copyright-block">
-          <p style="margin-bottom: 10px">
-            COPYRIGHT © 2025, GRUPO 1 - ESTADÍSTICA.
-          </p>
-          <p style="font-weight: 700">
-            UNIVERSIDAD CENTRAL DEL ECUADOR - FIGEMPA
-          </p>
-          <p style="font-size: 0.8rem">TODOS LOS DERECHOS RESERVADOS.</p>
-
-          <div class="social-icons" style="margin-top: 15px">
-            <a
-              href="https://www.instagram.com/figempa_uce/"
-              target="_blank"
-              aria-label="Instagram FIGEMPA UCE"
-              class="social-link"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/Figempa/"
-              target="_blank"
-              aria-label="Facebook FIGEMPA"
-              class="social-link"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              href="https://www.uce.edu.ec/web/figempa"
-              target="_blank"
-              aria-label="Sitio web FIGEMPA"
-              class="social-link"
-              ><i class="fa-solid fa-globe"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- ChatBot -->
-    <button id="chatbotBtn" class="chatbot-btn">🤖</button>
-
-    <div id="chatbotModal" class="chatbot-modal">
-      <div class="chatbot-header">
-        <p class="chatbot-header-text">Asistente Solar 🤖</p>
-        <button id="closeChatbot" class="closeChatbot-btn">&times;</button>
-      </div>
-      <div id="chatbox" class="chat-box">
-        <p class="bot-message">
-          Hola! Soy el Asistente Solar. Pregúntame sobre las variables, la
-          metodología o los modelos de regresión utilizados en el proyecto.
+        <p class="footer-university">
+          UNIVERSIDAD CENTRAL DEL ECUADOR - FIGEMPA
         </p>
-      </div>
-      <div class="chatInput-container">
-        <input
-          type="text"
-          id="chatInput"
-          class="chat-input"
-          placeholder="Escribe tu pregunta..."
-        />
-        <button id="sendChatBtn" class="sendChat-btn">Enviar</button>
+        <p class="footer-rights" data-i18n="footer_rights">TODOS LOS DERECHOS RESERVADOS.</p>
       </div>
     </div>
+  </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
-  </body>
+
+
+  <button id="chatbotBtn" class="chatbot-btn">🤖</button>
+
+  <div id="chatbotModal" class="chatbot-modal">
+    <div class="chatbot-header">
+      <p class="chatbot-header-text" data-i18n="chat_title">Asistente Solar 🤖</p>
+      <button id="closeChatbot" class="closeChatbot-btn">&times;</button>
+    </div>
+    <div id="chatbox" class="chat-box">
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>
