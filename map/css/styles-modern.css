@@ -1,0 +1,402 @@
+/* Modern Variables */
+:root {
+    --bg-dark: #0f172a;
+    --bg-card: rgba(30, 41, 59, 0.85);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent: #38bdf8;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(15, 23, 42, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: blur(12px);
+    --font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dashboard-header h1 i {
+    color: var(--accent);
+}
+
+.dashboard-header .stats {
+    display: flex;
+    gap: 24px;
+    font-size: 0.9rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.stat-value {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.stat-label {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+/* Map Container */
+#map {
+    flex: 1;
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+/* Custom Popup Styling */
+.leaflet-popup-content-wrapper {
+    background: var(--bg-card);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    overflow: hidden;
+}
+
+.leaflet-popup-tip {
+    background: var(--bg-card);
+}
+
+.leaflet-popup-content {
+    margin: 0;
+    width: 320px !important;
+    font-family: var(--font-family);
+}
+
+.popup-header {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.popup-title {
+    margin: 0 0 6px 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.popup-meta {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 8px;
+}
+
+.popup-country,
+.popup-size {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.popup-country i,
+.popup-size i {
+    color: var(--accent);
+    font-size: 0.8rem;
+}
+
+.popup-subtitle {
+    margin: 0 0 4px 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.popup-body {
+    padding: 16px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* Custom Scrollbar */
+.popup-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.popup-body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.popup-body::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.data-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-item.full-width {
+    grid-column: 1 / -1;
+}
+
+.data-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+.data-value {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #e2e8f0;
+}
+
+/* Inline horizontal row: label left — value right */
+.popup-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.popup-row:last-child {
+    border-bottom: none;
+}
+
+.row-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.row-value {
+    font-size: 0.92rem;
+    font-weight: 400;
+    color: #e2e8f0;
+    text-align: right;
+}
+
+.row-highlight {
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+}
+
+.status-operating {
+    background: rgba(32, 255, 13, 0.2);
+    color: #4ade80;
+    border: 1px solid rgba(32, 255, 13, 0.3);
+}
+
+.status-announced {
+    background: rgba(218, 27, 44, 0.2);
+    color: #fb7185;
+    border: 1px solid rgba(218, 27, 44, 0.3);
+}
+
+.status-construction {
+    background: rgba(214, 198, 23, 0.2);
+    color: #facc15;
+    border: 1px solid rgba(214, 198, 23, 0.3);
+}
+
+.status-pre-construction {
+    background: rgba(249, 109, 11, 0.2);
+    color: #fb923c;
+    border: 1px solid rgba(249, 109, 11, 0.3);
+}
+
+.status-other {
+    background: rgba(148, 163, 184, 0.2);
+    color: #cbd5e1;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Leaflet Controls Glassmorphism override */
+.leaflet-bar,
+.leaflet-control-layers {
+    background: var(--glass-bg) !important;
+    backdrop-filter: var(--glass-blur) !important;
+    -webkit-backdrop-filter: var(--glass-blur) !important;
+    border: 1px solid var(--glass-border) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+    color: var(--text-main) !important;
+}
+
+.leaflet-bar a,
+.leaflet-control-layers-toggle {
+    background-color: transparent !important;
+    color: var(--text-main) !important;
+    border-bottom: 1px solid var(--glass-border) !important;
+}
+
+.leaflet-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--accent) !important;
+}
+
+.leaflet-control-layers-expanded {
+    background: var(--glass-bg) !important;
+    color: var(--text-main) !important;
+}
+
+.leaflet-control-search {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+}
+
+.leaflet-control-photon input {
+    color: #333 !important;
+}
+
+/* Custom Legend UI */
+.custom-legend {
+    width: 320px;
+    font-family: var(--font-family);
+    color: var(--text-main);
+    padding: 8px 4px 4px 0;
+}
+
+.legend-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.70rem;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.legend-title {
+    font-weight: 600;
+}
+
+.legend-total {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.legend-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    padding: 2px 4px;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+}
+
+.legend-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.legend-item i.fa-check-square,
+.legend-item i.fa-square {
+    color: var(--text-muted);
+    margin-right: 14px;
+    font-size: 1.1rem;
+    width: 16px;
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+.legend-item i.fas.fa-check-square.checked {
+    color: #0ea5e9;
+    /* Bright blue for checked state */
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.legend-label {
+    flex: 1;
+    color: #e2e8f0;
+}
+
+.legend-count {
+    color: #94a3b8;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
