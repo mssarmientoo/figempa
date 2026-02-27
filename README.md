@@ -30,7 +30,7 @@ Integración de recursos multimedia y datos estructurados.
 
      - Estadística inferencial
 
-     -Metodología aplicada
+     - Metodología aplicada
 
 - 🎨 Interfaz responsiva con recursos multimedia
 
@@ -54,7 +54,7 @@ Integración de recursos multimedia y datos estructurados.
    
    - VectorGrid
  
-   -Heat
+   - Heat
 
 - QGIS + qgis2web (exportación web del mapa)
 
