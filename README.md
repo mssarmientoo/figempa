@@ -18,19 +18,19 @@ Integración de recursos multimedia y datos estructurados.
 **Características principales:**
 - 🌍 Mapa interactivo global con:
 
--- Capas temáticas
+     - Capas temáticas
 
--- Agrupamiento de marcadores (clusters)
+     - Agrupamiento de marcadores (clusters)
 
--- Visualización dinámica de datos
+     - Visualización dinámica de datos
 
 - 📊 Secciones de análisis estadístico:
 
--- Estadística descriptiva
+     - Estadística descriptiva
 
--- Estadística inferencial
+     - Estadística inferencial
 
--- Metodología aplicada
+     -Metodología aplicada
 
 - 🎨 Interfaz responsiva con recursos multimedia
 
@@ -50,9 +50,11 @@ Integración de recursos multimedia y datos estructurados.
 
 - Plugins de Leaflet:
 
--- MarkerCluster
--- VectorGrid
--- Heat
+   - MarkerCluster
+   
+   - VectorGrid
+ 
+   -Heat
 
 - QGIS + qgis2web (exportación web del mapa)
 
