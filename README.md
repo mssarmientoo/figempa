@@ -1,15 +1,40 @@
 # FIGEMPA — Análisis Estadístico de Plantas Solares
 
-Proyecto web estático de carácter académico que presenta un análisis estadístico y geoespacial de plantas solares a nivel mundial.
+Proyecto web estático de carácter académico que presenta un análisis estadístico y geoespacial de plantas solares a nivel mundial, integrando visualización cartográfica interactiva y resultados de análisis realizados en R.
 
 **Descripción:**
-- Sitio estático con visualización cartográfica (Leaflet) y páginas con resultados de análisis estadístico (R / RStudio).
-- Exportado parcialmente desde QGIS (carpeta `map/` y archivos `qgis2web`), con datos en `data/`.
+Este proyecto combina herramientas de Sistemas de Información Geográfica (SIG) y análisis estadístico para estudiar la distribución global de plantas solares.
+
+El sitio incluye:
+
+- Visualización cartográfica interactiva desarrollada con `Leaflet`.
+
+- Resultados de análisis estadísticos (descriptivos e inferenciales) realizados en `R / RStudio`.
+
+- Exportación parcial de mapas desde `QGIS` mediante el complemento `qgis2web`.
+
+Integración de recursos multimedia y datos estructurados.
 
 **Características principales:**
-- Mapa interactivo con capas y clusters (Leaflet + plugins).
-- Contenido estático con secciones de metodología, estadísticas descriptivas e inferenciales.
-- Material multimedia y recursos en `assets/` (imágenes, íconos, videos).
+- 🌍 Mapa interactivo global con:
+
+-- Capas temáticas
+
+-- Agrupamiento de marcadores (clusters)
+
+-- Visualización dinámica de datos
+
+- 📊 Secciones de análisis estadístico:
+
+-- Estadística descriptiva
+
+-- Estadística inferencial
+
+-- Metodología aplicada
+
+- 🎨 Interfaz responsiva con recursos multimedia
+
+- 📁 Organización modular del proyecto
 
 **Estructura del repositorio (resumen):**
 - `index.html` — página principal.
@@ -21,10 +46,23 @@ Proyecto web estático de carácter académico que presenta un análisis estadí
 - `prepros.config` — configuración para Prepros (si se usa para preprocesamiento).
 
 **Tecnologías y librerías usadas:**
-- Leaflet y varios plugins (MarkerCluster, VectorGrid, Heat, etc.).
-- qgis2web (export para web de mapas QGIS).
-- Font Awesome, Google Fonts.
-- Estilos CSS y scripts JavaScript front-end.
+- Leaflet (visualización cartográfica)
+
+- Plugins de Leaflet:
+
+-- MarkerCluster
+-- VectorGrid
+-- Heat
+
+- QGIS + qgis2web (exportación web del mapa)
+
+- R / RStudio (análisis estadístico)
+
+- Font Awesome
+
+- Google Fonts
+
+- HTML5, CSS3 y JavaScript
 
 Cómo ejecutar localmente
 - Opción rápida: abrir `index.html` en un navegador.
