@@ -1334,13 +1334,13 @@ const iSCuantitativesVariables = `
   
   <h4 class="title-4" data-i18n="continuous">Continuas</h4>
   <div class="ds-vcuanti-continuos">
-    <a href="https://rpubs.com/mssarmiento/1401151" target="_blank">
+    <a href="https://rpubs.com/JULEY/1404470" target="_blank">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/latitud.webp" alt="Imagen representativa de la variable Latitud" class="ds-vcuanti-img"/>
         <figcaption data-i18n="cap_lat">Latitud</figcaption>
       </figure>
     </a>
-    <a href="https://rpubs.com/mssarmiento/1401164" target="_blank">
+    <a href="https://rpubs.com/JULEY/1404468" target="_blank">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/longitud.webp" alt="Imagen representativa de la variable Longitud" class="ds-vcuanti-img"/>
         <figcaption data-i18n="cap_long">Longitud</figcaption>
@@ -1430,7 +1430,7 @@ const iSCuantitativesVariables = `
         <figcaption data-i18n="cap_capacity">Capacidad</figcaption>
       </figure>
     </a>
-    <a href="https://rpubs.com/Caliche/1400364" target="_blank">
+    <a href="https://rpubs.com/JULEY/1404262" target="_blank">
       <figure>
         <img src="https://mssarmientoo.github.io/figempa/assets/images/vcuanti/dist-to-road.webp" alt="Imagen representativa de la variable Distancia a la vía" class="ds-vcuanti-img"/>
         <figcaption data-i18n="cap_dist_road">Distancia a la Vía</figcaption>
